@@ -1,5 +1,6 @@
 # PowerShell script to extract and merge .mcaddon files into behavior_pack and resource_pack
 # Usage: Run from the project root directory
+# Supports various .mcaddon folder structures (Strawberry Minecraft, standard behavior_pack/resource_pack, etc.)
 
 # Define paths
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -38,7 +39,26 @@ function Merge-DirectoriesNonDestructive {
     
     # Get all items from source
     $items = Get-ChildItem -Path $SourceDir -Force
+    foreach ($item in $items) {
+        $destPath = Join-Path $DestDir $item.Name
+        
+        if ($item.PSIsContainer) {
+            # It's a directory - merge recursively
+            Merge-DirectoriesNonDestructive -SourceDir $item.FullName -DestDir $destPath
+        }
+        else {
+            # It's a file - copy only if it doesn't exist
+            if (-not (Test-Path $destPath)) {
+                Copy-Item -Path $item.FullName -Destination $destPath -Force
+                Write-Host "  Copied: $($item.Name)"
+            }
+            else {
+                Write-Host "  Skipped (exists): $($item.Name)"
+            }
+        }
+    }
     
+    <#
     foreach ($item in $items) {
         $destPath = Join-Path $DestDir $item.Name
         
@@ -59,7 +79,7 @@ function Merge-DirectoriesNonDestructive {
                 Write-Host "  Skipped (exists): $($item.Name)"
             }
         }
-    }
+    }#>
 }
 
 # Main processing loop
@@ -70,7 +90,7 @@ if ($mcaddonFiles.Count -eq 0) {
     exit
 }
 
-Write-Host "Found $($mcaddonFiles.Count) .mcaddon file(s) to process`n"
+Write-Host "Found $($mcaddonFiles.Count) .mcaddon file(s) to process"
 
 foreach ($mcaddon in $mcaddonFiles) {
     $mcaddonName = $mcaddon.BaseName
@@ -82,10 +102,10 @@ foreach ($mcaddon in $mcaddonFiles) {
     
     if (-not (Test-Path $zipPath)) {
         Copy-Item -Path $mcaddon.FullName -Destination $zipPath
-        Write-Host "  → Copied to zip_files as: $zipFileName"
+        Write-Host "  Copied to zip_files as: $zipFileName"
     }
     else {
-        Write-Host "  → .zip already exists, skipping copy"
+        Write-Host "  .zip already exists, skipping copy"
     }
     
     # Step 2: Extract the .zip
@@ -93,24 +113,50 @@ foreach ($mcaddon in $mcaddonFiles) {
     
     if (-not (Test-Path $extractPath)) {
         Expand-Archive -Path $zipPath -DestinationPath $extractPath
-        Write-Host "  → Extracted to: extracted_zip\$mcaddonName"
+        Write-Host "  Extracted to: extracted_zip\$mcaddonName"
     }
     else {
-        Write-Host "  → Already extracted, skipping extraction"
+        Write-Host "  Already extracted, skipping extraction"
     }
     
     # Step 3: Merge behavior_pack
-    $sourceBehavior = Join-Path $extractPath "behavior_pack"
-    if (Test-Path $sourceBehavior) {
+    # Try multiple possible folder names for behavior pack
+    $behaviorFolderNames = @("Strawberry Minecraft Behavior", "behavior_pack", "Behavior Pack")
+    $sourceBehavior = $null
+    foreach ($folderName in $behaviorFolderNames) {
+        $potentialPath = Join-Path $extractPath $folderName
+        if (Test-Path $potentialPath) {
+            $sourceBehavior = $potentialPath
+            break
+        }
+    }
+    
+    if ($sourceBehavior) {
         Write-Host "  → Merging behavior_pack:"
         Merge-DirectoriesNonDestructive -SourceDir $sourceBehavior -DestDir $behaviorPackDest
     }
+    else {
+        Write-Host "  → No behavior pack folder found in .mcaddon"
+    }
     
     # Step 4: Merge resource_pack
-    $sourceResource = Join-Path $extractPath "resource_pack"
-    if (Test-Path $sourceResource) {
+    # Try multiple possible folder names for resource pack
+    $resourceFolderNames = @("Strawberry Minecraft Resources", "resource_pack", "Resource Pack")
+    $sourceResource = $null
+    foreach ($folderName in $resourceFolderNames) {
+        $potentialPath = Join-Path $extractPath $folderName
+        if (Test-Path $potentialPath) {
+            $sourceResource = $potentialPath
+            break
+        }
+    }
+    
+    if ($sourceResource) {
         Write-Host "  → Merging resource_pack:"
         Merge-DirectoriesNonDestructive -SourceDir $sourceResource -DestDir $resourcePackDest
+    }
+    else {
+        Write-Host "  → No resource pack folder found in .mcaddon"
     }
     
     # Step 5: Mark as processed
@@ -121,7 +167,7 @@ foreach ($mcaddon in $mcaddonFiles) {
     New-Item -Path $processedMarkerPath -ItemType File -Force | Out-Null
     New-Item -Path $mcaddonProcessedPath -ItemType File -Force | Out-Null
     
-    Write-Host "  ✓ Marked as processed`n"
+    Write-Host "  Marked as processed"
 }
 
 Write-Host "Script completed successfully!"
