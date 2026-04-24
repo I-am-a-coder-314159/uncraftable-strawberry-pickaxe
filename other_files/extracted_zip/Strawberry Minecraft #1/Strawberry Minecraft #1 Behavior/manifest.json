@@ -1,0 +1,29 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Strawberry Minecraft #1",
+		"description": "Strawberry Minecraft #1 Behavior Pack",
+		"uuid": "0f846e6e-b16d-ff8b-e6a9-d026b0ae7217",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 20, 0]
+	},
+	"metadata": {
+		"generated_with": {
+			"blockbench_item_wizard": ["1.2.4"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "bae75d99-a187-08f9-5098-b83644adbf7f",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "7f48a6dd-0c7f-f496-c153-48c477f033e2",
+			"version": [1, 0, 0]
+		}
+	]
+}

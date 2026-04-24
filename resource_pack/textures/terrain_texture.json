@@ -1,0 +1,42 @@
+{
+  "resource_pack_name": "strawberrymc",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "furnace_front_off": {
+      "textures": "textures/blocks/furnace_front_off"
+    },
+    "furnace_front_on": {
+      "textures": "textures/blocks/furnace_front_on"
+    },
+    "furnace_front_hot": {
+      "textures": "textures/blocks/furnace_front_hot"
+    },
+    "furnace_front_very_hot": {
+      "textures": "textures/blocks/furnace_front_very_hot"
+    },
+    "furnace_side": {
+      "textures": "textures/blocks/furnace_side"
+    },
+    "furnace_top": {
+      "textures": "textures/blocks/furnace_top"
+    },
+    "blast_furnace_front_off": {
+      "textures": "textures/blocks/blast_furnace_front_off"
+    },
+    "blast_furnace_front_on": {
+      "textures": "textures/blocks/blast_furnace_front_on"
+    },
+    "blast_furnace_front_hot": {
+      "textures": "textures/blocks/blast_furnace_front_hot"
+    },
+    "blast_furnace_front_very_hot": {
+      "textures": "textures/blocks/blast_furnace_front_very_hot"
+    },
+    "blast_furnace_side": {
+      "textures": "textures/blocks/blast_furnace_side"
+    },
+    "blast_furnace_top": {
+      "textures": "textures/blocks/blast_furnace_top"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Strawberry Minecraft",
+		"description": "Strawberry Minecraft Resource Pack",
+		"uuid": "e34998c9-4ddb-4752-f555-4bdd058366e2",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"generated_with": {
+			"blockbench_item_wizard": ["1.2.4"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Strawberry Minecraft",
+			"type": "resources",
+			"uuid": "0f5d83b1-3542-1e5c-3577-57de402210ce",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "403d0270-4b39-4a63-2f85-6981f85cb2c6",
+			"version": [1, 0, 0]
+		}
+	]
+}

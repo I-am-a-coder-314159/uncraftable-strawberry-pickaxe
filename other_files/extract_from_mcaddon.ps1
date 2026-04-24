@@ -121,7 +121,7 @@ foreach ($mcaddon in $mcaddonFiles) {
     
     # Step 3: Merge behavior_pack
     # Try multiple possible folder names for behavior pack
-    $behaviorFolderNames = @("Strawberry Minecraft Behavior", "behavior_pack", "Behavior Pack")
+    $behaviorFolderNames = @("Strawberry Minecraft Behavior", "Strawberry Minecraft #1 Behavior", "behavior_pack", "Behavior Pack")
     $sourceBehavior = $null
     foreach ($folderName in $behaviorFolderNames) {
         $potentialPath = Join-Path $extractPath $folderName
@@ -141,7 +141,7 @@ foreach ($mcaddon in $mcaddonFiles) {
     
     # Step 4: Merge resource_pack
     # Try multiple possible folder names for resource pack
-    $resourceFolderNames = @("Strawberry Minecraft Resources", "resource_pack", "Resource Pack")
+    $resourceFolderNames = @("Strawberry Minecraft Resources", "Strawberry Minecraft #1 Resources", "resource_pack", "Resource Pack")
     $sourceResource = $null
     foreach ($folderName in $resourceFolderNames) {
         $potentialPath = Join-Path $extractPath $folderName

@@ -1,0 +1,167 @@
+{
+  "format_version": "1.20.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "strawberrymc:blast_furnace",
+      "menu_category": {
+        "category": "construction"
+      },
+      "properties": {
+        "strawberrymc:temperature": {
+          "type": "int",
+          "range": [0, 2000]
+        }
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/blast_furnace.json",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 3.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.5
+      },
+      "minecraft:material_instances": {
+        "north": {
+          "texture": "blast_furnace_front_off",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        },
+        "south": {
+          "texture": "blast_furnace_side",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        },
+        "east": {
+          "texture": "blast_furnace_side",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        },
+        "west": {
+          "texture": "blast_furnace_side",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        },
+        "up": {
+          "texture": "blast_furnace_top",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        },
+        "down": {
+          "texture": "blast_furnace_top",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        }
+      },
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:light_emission": 0,
+      "minecraft:inventory": {
+        "inventory_size": 7,
+        "private": false,
+        "restrict_to_owner": false,
+        "can_be_siphoned_from": true
+      },
+      "minecraft:on_interact": {
+        "condition": "query.block_property('strawberrymc:temperature') >= 0"
+      },
+      "minecraft:custom_components": [
+        "strawberrymc:furnace_temperature",
+        "strawberrymc:furnace_interact",
+        "strawberrymc:furnace_smelting"
+      ]
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('strawberrymc:temperature') >= 2000",
+        "components": {
+          "minecraft:light_emission": 15,
+          "minecraft:material_instances": {
+            "north": {
+              "texture": "blast_furnace_front_very_hot",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('strawberrymc:temperature') >= 1000 && query.block_property('strawberrymc:temperature') < 2000",
+        "components": {
+          "minecraft:light_emission": 15,
+          "minecraft:material_instances": {
+            "north": {
+              "texture": "blast_furnace_front_hot",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('strawberrymc:temperature') >= 800 && query.block_property('strawberrymc:temperature') < 1000",
+        "components": {
+          "minecraft:light_emission": 13,
+          "minecraft:material_instances": {
+            "north": {
+              "texture": "blast_furnace_front_on",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('strawberrymc:temperature') >= 600 && query.block_property('strawberrymc:temperature') < 800",
+        "components": {
+          "minecraft:light_emission": 10,
+          "minecraft:material_instances": {
+            "north": {
+              "texture": "blast_furnace_front_on",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('strawberrymc:temperature') >= 400 && query.block_property('strawberrymc:temperature') < 600",
+        "components": {
+          "minecraft:light_emission": 7,
+          "minecraft:material_instances": {
+            "north": {
+              "texture": "blast_furnace_front_on",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('strawberrymc:temperature') >= 200 && query.block_property('strawberrymc:temperature') < 400",
+        "components": {
+          "minecraft:light_emission": 5,
+          "minecraft:material_instances": {
+            "north": {
+              "texture": "blast_furnace_front_on",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      },
+      {
+        "condition": "query.block_property('strawberrymc:temperature') > 0 && query.block_property('strawberrymc:temperature') < 200",
+        "components": {
+          "minecraft:light_emission": 3,
+          "minecraft:material_instances": {
+            "north": {
+              "texture": "blast_furnace_front_on",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          }
+        }
+      }
+    ]
+  }
+}

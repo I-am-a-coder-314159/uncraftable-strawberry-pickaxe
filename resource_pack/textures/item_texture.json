@@ -4,6 +4,12 @@
   "texture_data": {
     "radonite_ingot": {
       "textures": "textures/items/radonite_ingot"
+    },
+    "furnace": {
+      "textures": "textures/items/furnace"
+    },
+    "blast_furnace": {
+      "textures": "textures/items/blast_furnace"
     }
   }
 }

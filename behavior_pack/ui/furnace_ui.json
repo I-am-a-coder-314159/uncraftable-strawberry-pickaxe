@@ -1,0 +1,80 @@
+{
+  "namespace": "strawberrymc",
+  "furnace_ui": {
+    "type": "custom_form",
+    "title": "Temperature Furnace",
+    "content": [
+      {
+        "type": "label",
+        "text": "§lTemperature Furnace\n§rCurrent Temperature: {temperature}°C"
+      },
+      {
+        "type": "label",
+        "text": "Fuel Slot:"
+      },
+      {
+        "type": "slot",
+        "id": "fuel_slot",
+        "inventory_id": "container",
+        "slot": 1
+      },
+      {
+        "type": "label",
+        "text": "Input Slots:"
+      },
+      {
+        "type": "slot",
+        "id": "input_slot_0",
+        "inventory_id": "container",
+        "slot": 0
+      },
+      {
+        "type": "slot",
+        "id": "input_slot_2",
+        "inventory_id": "container",
+        "slot": 2
+      },
+      {
+        "type": "slot",
+        "id": "input_slot_3",
+        "inventory_id": "container",
+        "slot": 3
+      },
+      {
+        "type": "label",
+        "text": "Modifier Slots:"
+      },
+      {
+        "type": "slot",
+        "id": "modifier_slot_0",
+        "inventory_id": "container",
+        "slot": 4
+      },
+      {
+        "type": "slot",
+        "id": "modifier_slot_1",
+        "inventory_id": "container",
+        "slot": 5
+      },
+      {
+        "type": "label",
+        "text": "Output:"
+      },
+      {
+        "type": "slot",
+        "id": "output_slot",
+        "inventory_id": "container",
+        "slot": 6
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Close",
+        "image": {
+          "type": "path",
+          "path": "textures/ui/cancel"
+        }
+      }
+    ]
+  }
+}

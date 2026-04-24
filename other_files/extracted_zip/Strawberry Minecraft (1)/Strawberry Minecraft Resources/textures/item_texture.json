@@ -1,0 +1,10 @@
+{
+	"texture_data": {
+		"flint_dagger": {
+			"textures": "textures/items/flint_dagger.png"
+		},
+		"banana": {
+			"textures": "textures/items/banana.png"
+		}
+	}
+}

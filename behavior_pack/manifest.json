@@ -13,6 +13,13 @@
       "type": "data",
       "uuid": "behavior-module-uuid-placeholder",
       "version": [1, 0, 0]
+    },
+    {
+      "description": "Script Module",
+      "type": "javascript",
+      "uuid": "script-module-uuid-placeholder",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
     }
   ]
 }
