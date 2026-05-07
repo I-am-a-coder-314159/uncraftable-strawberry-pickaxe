@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermetallic Alloy Lab</title>
+    <style>
+        body {
+            margin: 0;
+            background: #1a1a1a;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            min-height: 100vh;
+            transition: background-color 0.3s ease;
+        }
+        #ui {
+            width: 320px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            height: 100vh;
+            overflow-y: auto;
+            box-shadow: 2px 0 15px rgba(0,0,0,0.5);
+            z-index: 10;
+            flex-shrink: 0;
+        }
+        #main {
+            flex: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 220px;
+            grid-template-rows: 1fr;
+            gap: 20px;
+            min-width: 0;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #render-area {
+            position: relative;
+            min-height: 0;
+            min-width: 0;
+            background: #1f1f1f;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            cursor: grab;
+        }
+        .control { margin-bottom: 20px; }
+        label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px; font-weight: bold; }
+        input[type=range] { width: 100%; cursor: pointer; }
+        .status-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        #color-dialog {
+            margin-top: 20px;
+            padding: 18px;
+            background: rgba(255,255,255,0.09);
+            border: 1px solid rgba(255,255,255,0.14);
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            align-items: center;
+        }
+        #color-swatch {
+            width: 80px;
+            height: 80px;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 0 0 0 1px rgba(255,255,255,0.04) inset;
+            background: #ffffff;
+        }
+        #color-dialog .dialog-text {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 13px;
+        }
+        #ingot-preview {
+            margin: 0;
+            padding: 18px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 14px;
+            width: 180px;
+            min-height: 180px;
+            display: grid;
+            place-items: center;
+            align-self: start;
+        }
+        #ingot-preview img {
+            image-rendering: pixelated;
+            width: 64px;
+            height: 64px;
+        }
+        #warning {
+            color: #ff3333;
+            font-weight: bold;
+            display: none;
+            margin-top: 10px;
+            text-shadow: 0 0 5px black;
+        }
+        h2 { margin-top: 0; color: #ffd700; font-size: 22px; }
+        hr { border: 0; border-top: 1px solid #444; margin: 20px 0; }
+        .desc { font-size: 11px; opacity: 0.7; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+<div id="ui">
+    <h2>Alloy Mixer</h2>
+    <p style="font-size: 11px; opacity: 0.7;">Adjust sliders to blend elements and witness relativistic color shifts and intermetallic bonding.</p>
+    <div id="controls"></div>
+    <hr>
+    <div class="status-box">
+        <div>HEX Code: <span id="hex-label" style="font-family: monospace;">#ffffff</span></div>
+        <div id="alloy-type">Type: Standard Alloy</div>
+        <div id="alloy-desc" class="desc">Standard alloy mixture</div>
+        <div id="warning">⚠️ BRITTLE INTERMETALLIC STRUCTURE</div>
+    </div>
+    <div id="color-dialog">
+        <div id="color-swatch"></div>
+        <div class="dialog-text">
+            <div><strong>Standalone Color Preview</strong></div>
+            <div id="color-desc" class="desc">This box shows the current alloy color without using Three.js lighting.</div>
+            <div>Color: <span id="dialog-hex" style="font-family: monospace;">#ffffff</span></div>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div id="render-area"></div>
+    <div id="ingot-preview"></div>
+</div>
+<script src="https://unpkg.com/three@0.155.0/build/three.min.js"></script>
+<script src="alloy-calculator.js"></script>
+<script src="ingot_designer.js"></script>
+
+<script>
+let composition = { gold: 100, silver: 0, copper: 0, aluminum: 0, gallium: 0, titanium: 0, indium: 0 };
+
+// --- THREE.JS SCENE SETUP ---
+const scene = new THREE.Scene();
+const renderArea = document.getElementById('render-area');
+const camera = new THREE.PerspectiveCamera(75, renderArea.clientWidth / renderArea.clientHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+function resizeRenderer() {
+    const width = renderArea.clientWidth;
+    const height = renderArea.clientHeight;
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
+}
+resizeRenderer();
+renderer.setClearColor(0x292929, 1);
+renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.2;
+document.getElementById('render-area').appendChild(renderer.domElement);
+
+const geometry = new THREE.SphereGeometry(1.8, 128, 128);
+const material = new THREE.MeshStandardMaterial({
+    metalness: 0.95,
+    roughness: 0.28,
+    color: 0xffd700,
+    emissive: 0x080808,
+    emissiveIntensity: 0.2,
+    envMapIntensity: 1.0
+});
+const sphere = new THREE.Mesh(geometry, material);
+scene.add(sphere);
+
+const light1 = new THREE.DirectionalLight(0xffffff, 2.2);
+light1.position.set(5, 5, 5);
+scene.add(light1);
+
+const light2 = new THREE.DirectionalLight(0xffffff, 1.4);
+light2.position.set(-2, 3, 4);
+scene.add(light2);
+
+const light3 = new THREE.PointLight(0xffffff, 1.0);
+light3.position.set(-5, -5, 2);
+scene.add(light3);
+
+const hemi = new THREE.HemisphereLight(0xddddff, 0x202020, 0.55);
+scene.add(hemi);
+
+const ambient = new THREE.AmbientLight(0xffffff, 0.75);
+scene.add(ambient);
+
+camera.position.z = 5;
+
+// --- DYNAMIC ALLOY CALCULATOR ---
+function updateAlloy() {
+    const result = calculateAlloy(composition);
+    const rgb = result.color.map(c => Math.round(c * 255));
+    const hexString = rgbToHex(...rgb);
+
+    // Apply to UI and Scene
+    material.color.setRGB(result.color[0], result.color[1], result.color[2]);
+    if (result.appearance) {
+        material.metalness = result.appearance.metalness;
+        material.roughness = result.appearance.roughness;
+        material.emissive.setScalar(result.appearance.emissive);
+    }
+    document.getElementById('hex-label').innerText = hexString.toUpperCase();
+    document.getElementById('dialog-hex').innerText = hexString.toUpperCase();
+    document.getElementById('color-swatch').style.background = hexString;
+    renderAlloyIngotToElement('ingot-preview', composition, { size: 16 });
+    document.getElementById('alloy-type').innerText = 'Type: ' + result.type.replace(/([A-Z])/g, ' $1').toUpperCase();
+    document.getElementById('alloy-desc').innerText = result.desc;
+    document.getElementById('warning').style.display = result.brittleness > 0.5 ? 'block' : 'none';
+}
+
+// --- UI BUILDER ---
+const controls = document.getElementById('controls');
+Object.keys(metals).forEach(m => {
+    const div = document.createElement('div');
+    div.className = 'control';
+    div.innerHTML = `<label><span>${m.toUpperCase()}</span> <span id="${m}-val">${composition[m]}%</span></label>
+                     <input type="range" min="0" max="100" value="${composition[m]}" id="${m}-slide">`;
+    controls.appendChild(div);
+
+    document.getElementById(`${m}-slide`).addEventListener('input', (e) => {
+        composition[m] = parseInt(e.target.value);
+        document.getElementById(`${m}-val`).innerText = e.target.value + '%';
+        updateAlloy();
+    });
+});
+
+// --- RENDER LOOP ---
+function animate() {
+    requestAnimationFrame(animate);
+    sphere.rotation.y += 0.005;
+    renderer.render(scene, camera);
+}
+
+updateAlloy();
+animate();
+
+window.addEventListener('resize', () => {
+    resizeRenderer();
+});
+</script>
+</body>
+</html>
