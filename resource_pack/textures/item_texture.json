@@ -10,6 +10,9 @@
     },
     "blast_furnace": {
       "textures": "textures/items/blast_furnace"
+    },
+    "uncraftable_potion": {
+      "textures": "textures/items/uncraftable_potion"
     }
   }
 }
