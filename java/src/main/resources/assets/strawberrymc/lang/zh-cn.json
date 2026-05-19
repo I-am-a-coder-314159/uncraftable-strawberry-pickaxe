@@ -1,0 +1,17 @@
+{
+  "strawberrymc.configuration.title": "草莓我的世界 - 配置",
+  "strawberrymc.configuration.section.strawberrymc.common.toml": "草莓我的世界 - 配置",
+  "strawberrymc.configuration.section.strawberrymc.common.toml.title": "草莓我的世界 - 配置",
+  "strawberrymc.configuration.items": "物品清单",
+  "strawberrymc.configuration.logDirtBlock": "控制台日志 泥土 堵塞",
+  "strawberrymc.configuration.magicNumberIntroduction": "神奇数字 案文",
+  "strawberrymc.configuration.magicNumber": "神奇数字",
+
+  "block.strawberrymc.palm_log": "棕榈 木头",
+  "block.strawberrymc.palm_wood": "棕榈 木",
+  "block.strawberrymc.palm_planks": "棕榈 木板",
+  "item.strawberrymc.palm_log": "棕榈 木头",
+  "item.strawberrymc.palm_wood": "棕榈 木",
+  "item.strawberrymc.palm_planks": "棕榈 木板",
+  "item.strawberrymc.coconut": "椰子"
+}

@@ -1,13 +1,17 @@
 {
-  "itemGroup.strawberrymc": "Example Mod Tab",
-  "block.strawberrymc.example_block": "Example Block",
-  "item.strawberrymc.example_item": "Example Item",
-
   "strawberrymc.configuration.title": "Strawberry Minecraft Configs",
   "strawberrymc.configuration.section.strawberrymc.common.toml": "Strawberry Minecraft Configs",
   "strawberrymc.configuration.section.strawberrymc.common.toml.title": "Strawberry Minecraft Configs",
   "strawberrymc.configuration.items": "Item List",
   "strawberrymc.configuration.logDirtBlock": "Log Dirt Block",
   "strawberrymc.configuration.magicNumberIntroduction": "Magic Number Text",
-  "strawberrymc.configuration.magicNumber": "Magic Number"
+  "strawberrymc.configuration.magicNumber": "Magic Number",
+
+  "block.strawberrymc.palm_log": "Palm Log",
+  "block.strawberrymc.palm_wood": "Palm Wood",
+  "block.strawberrymc.palm_planks": "Palm Planks",
+  "item.strawberrymc.palm_log": "Palm Log",
+  "item.strawberrymc.palm_wood": "Palm Wood",
+  "item.strawberrymc.palm_planks": "Palm Planks",
+  "item.strawberrymc.coconut": "Coconut"
 }
