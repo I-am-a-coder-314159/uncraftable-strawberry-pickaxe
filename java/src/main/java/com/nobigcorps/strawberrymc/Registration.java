@@ -15,33 +15,33 @@ public class Registration {
 
     public static final DeferredBlock<Block> PALM_LOG = BLOCKS.registerSimpleBlock(
             "palm_log",
-            BlockBehaviour.Properties.of().destroyTime(1.5f).explosionResistance(6.0f)
-    )
+            () -> BlockBehaviour.Properties.of().destroyTime(1.5f).explosionResistance(6.0f)
+    );
 
     public static final DeferredItem<BlockItem> PALM_LOG_ITEM = ITEMS.registerSimpleBlockItem(
             PALM_LOG
-    )
+    );
 
     public static final DeferredBlock<Block> PALM_WOOD = BLOCKS.registerSimpleBlock(
             "palm_wood",
-            BlockBehaviour.Properties.of().destroyTime(1.5f).explosionResistance(6.0f)
-    )
+            () -> BlockBehaviour.Properties.of().destroyTime(1.5f).explosionResistance(6.0f)
+    );
 
     public static final DeferredItem<BlockItem> PALM_WOOD_ITEM = ITEMS.registerSimpleBlockItem(
             PALM_WOOD
-    )
+    );
     public static final DeferredBlock<Block> PALM_PLANKS = BLOCKS.registerSimpleBlock(
             "palm_planks",
-            BlockBehaviour.Properties.of().destroyTime(1.5f).explosionResistance(6.0f)
-    )
+            () -> BlockBehaviour.Properties.of().destroyTime(1.5f).explosionResistance(6.0f)
+    );
 
     public static final DeferredItem<BlockItem> PALM_PLANKS_ITEM = ITEMS.registerSimpleBlockItem(
             PALM_PLANKS
-    )
+    );
     public static final DeferredItem<Item> COCONUT = ITEMS.registerSimpleItem(
             "coconut",
-            new Item.Properties()
-    )
+            () -> new Item.Properties()
+    );
 
     public static void init(IEventBus modEventBus) {
         BLOCKS.register(modEventBus);

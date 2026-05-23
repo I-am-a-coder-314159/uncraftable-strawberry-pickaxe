@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -70,11 +72,12 @@ public class StrawberryMinecraft {
         modEventBus.addListener(this::commonSetup);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
-        BLOCKS.register(modEventBus);
+        //BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
-        ITEMS.register(modEventBus);
+        //ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
-        CREATIVE_MODE_TABS.register(modEventBus);
+        //CREATIVE_MODE_TABS.register(modEventBus);
+        Registration.init(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (StrawberryMinecraft) to respond directly to events.
@@ -101,29 +104,38 @@ public class StrawberryMinecraft {
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
     }
 
-    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        // 1. BUILDING BLOCKS
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            // Place your planks directly after vanilla jungle planks
-            event.acceptAfter(Items.JUNGLE_PLANKS, Registration.PALM_PLANKS_ITEM.get());
-
-            // Place your log and wood blocks directly after vanilla jungle log items
-            event.acceptAfter(Items.JUNGLE_LOG, Registration.PALM_LOG_ITEM.get());
-            event.acceptAfter(Registration.PALM_LOG_ITEM.get(), Registration.PALM_WOOD_ITEM.get());
+            event.accept(Registration.PALM_PLANKS_ITEM.get());
+        }
+        if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
         }
 
-        // 2. NATURAL BLOCKS
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            // Nest logs and wood next to vanilla jungle log variants
-            event.acceptAfter(Items.JUNGLE_LOG, Registration.PALM_LOG_ITEM.get());
-            event.acceptAfter(Registration.PALM_LOG_ITEM.get(), Registration.PALM_WOOD_ITEM.get());
         }
 
-        // 3. FOOD AND DRINKS
+        if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+        }
+
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            // Place your coconut alongside other fresh fruit crops like apples
-            event.acceptAfter(Items.APPLE, Registration.COCONUT.get());
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
         }
     }
 
@@ -133,12 +145,5 @@ public class StrawberryMinecraft {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
-    public StrawberryMinecraft(IEventBus modEventBus) {
-        // Add these lines inside your constructor:
-        Registration.BLOCKS.register(modEventBus);
-        Registration.ITEMS.register(modEventBus);
 
-        // Existing setup code...
-        modEventBus.addListener(this::addCreative);
-    }
 }
