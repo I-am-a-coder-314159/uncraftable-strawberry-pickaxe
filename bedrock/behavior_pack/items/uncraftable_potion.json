@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "strawberrymc:uncraftable_potion",
-      "category": "items"
+      "category": "equipment"
     },
     "components": {
       "minecraft:max_stack_size": 1,
