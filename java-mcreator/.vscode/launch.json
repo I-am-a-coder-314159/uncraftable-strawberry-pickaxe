@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - java-mcreator",
+        "order": 0
+      },
+      "projectName": "java-mcreator",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - java-mcreator",
+        "order": 1
+      },
+      "projectName": "java-mcreator",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}
