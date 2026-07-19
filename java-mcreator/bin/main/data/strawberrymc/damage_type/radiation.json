@@ -1,0 +1,6 @@
+{
+  "exhaustion": 0.01,
+  "message_id": "radiation",
+  "scaling": "always",
+  "effects": "poking"
+}

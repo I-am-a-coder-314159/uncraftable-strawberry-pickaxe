@@ -1,0 +1,26 @@
+{
+  "workspacePanelIconSize": "SMALL",
+  "workspacePanelSortType": "CREATED",
+  "workspacePanelSortAscending": true,
+  "projectBrowserState": {
+    "expandedPaths": [
+      "[, Strawberry Minecraft]"
+    ]
+  },
+  "leftDockState": {
+    "dockSizes": {
+      "project_browser": 25,
+      "local_history": 280
+    }
+  },
+  "rightDockState": {
+    "dockSizes": {}
+  },
+  "bottomDockState": {
+    "dockSizes": {
+      "console": 300,
+      "code_viewer": 300,
+      "debugger": 300
+    }
+  }
+}
