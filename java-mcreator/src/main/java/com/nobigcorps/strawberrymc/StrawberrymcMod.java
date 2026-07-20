@@ -14,7 +14,9 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
 
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
 import net.minecraft.server.TickTask;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
@@ -37,6 +39,8 @@ import it.unimi.dsi.fastutil.ints.IntObjectPair;
 import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 
 import com.nobigcorps.strawberrymc.network.StrawberrymcModVariables;
+import com.nobigcorps.strawberrymc.init.StrawberrymcModAttributes;
+import com.nobigcorps.strawberrymc.procedures.CalculateRadiationDamageProcedure;
 
 @Mod("strawberrymc")
 public class StrawberrymcMod {
@@ -49,6 +53,7 @@ public class StrawberrymcMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		StrawberrymcModVariables.ATTACHMENT_TYPES.register(modEventBus);
+		StrawberrymcModAttributes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
@@ -76,6 +81,8 @@ public class StrawberrymcMod {
 
 	private static final Queue<IntObjectPair<Runnable>> workToBeScheduled = new ConcurrentLinkedQueue<>();
 	private static final PriorityQueue<TickTask> workQueue = new PriorityQueue<>(Comparator.comparingInt(TickTask::getTick));
+	private static final int RADIATION_TICK_INTERVAL = 10;
+	private static int radiationTickCounter = 0;
 
 	public static void queueServerWork(int delay, Runnable action) {
 		if (Thread.currentThread().getThreadGroup() == SidedThreadGroups.SERVER)
@@ -92,6 +99,26 @@ public class StrawberrymcMod {
 		while (!workQueue.isEmpty() && currentTick >= workQueue.peek().getTick()) {
 			workQueue.poll().run();
 		}
+
+		radiationTickCounter++;
+		if (radiationTickCounter >= RADIATION_TICK_INTERVAL) {
+			radiationTickCounter = 0;
+			for (Player player : event.getServer().getPlayerList().getPlayers()) {
+				if (hasUnlockedEnd(player)) {
+					for (LivingEntity entity : player.level().players()) {
+						CalculateRadiationDamageProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+					}
+				}
+			}
+		}
+	}
+
+	private static boolean hasUnlockedEnd(Player player) {
+		if (player.level().dimension() == Level.END) {
+			player.getPersistentData().putBoolean("strawberrymc:unlocked_end", true);
+			return true;
+		}
+		return player.getPersistentData().getBoolean("strawberrymc:unlocked_end").orElse(false);
 	}
 
 	private static Object minecraft;

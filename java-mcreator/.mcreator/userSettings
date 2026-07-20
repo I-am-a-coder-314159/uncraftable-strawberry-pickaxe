@@ -4,12 +4,18 @@
   "workspacePanelSortAscending": true,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, Strawberry Minecraft]"
+      "[, Strawberry Minecraft]",
+      "[, Strawberry Minecraft, Source (Gradle)]",
+      "[, Strawberry Minecraft, Source (Gradle), C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com]",
+      "[, Strawberry Minecraft, Source (Gradle), C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps]",
+      "[, Strawberry Minecraft, Source (Gradle), C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps\\strawberrymc]",
+      "[, Strawberry Minecraft, Source (Gradle), C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps\\strawberrymc, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps\\strawberrymc\\procedures]"
     ]
   },
   "leftDockState": {
+    "expandedDock": "project_browser",
     "dockSizes": {
-      "project_browser": 25,
+      "project_browser": 214,
       "local_history": 280
     }
   },
