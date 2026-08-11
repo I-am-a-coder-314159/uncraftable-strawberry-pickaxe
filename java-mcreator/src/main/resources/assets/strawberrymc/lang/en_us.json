@@ -37,5 +37,6 @@
   "item.strawberrymc.metal_block": "Block of Metal",
   "death.attack.radiation": "%1$s died of radiation",
   "death.attack.radiation.player": "%1$s died whilst trying to escape the radiation of %2$s",
-  "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s (§kTheEnd§r)"
+  "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s (§kTheEnd§r)",
+  "attribute.strawberrymc.radiation_tolerance": "Radiation Tolerance"
 }

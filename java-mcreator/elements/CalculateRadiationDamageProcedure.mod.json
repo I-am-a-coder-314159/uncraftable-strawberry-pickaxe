@@ -1,0 +1,8 @@
+{
+  "_fv": 89,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"Number\" id=\"dirX\">dirX</variable><variable type=\"Number\" id=\"dirY\">dirY</variable><variable type=\"Number\" id=\"dirZ\">dirZ</variable><variable type=\"Number\" id=\"currentLength\">currentLength</variable><variable type=\"String\" id=\"blockInterceptList\">blockInterceptList</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"world_entity_inrange_foreach\"><value name=\"_placeholder\"><block type=\"entity_iterator\" deletable=\"false\" movable=\"false\"></block></value><value name=\"x\"><block type=\"coord_x\"></block></value><value name=\"y\"><block type=\"coord_y\"></block></value><value name=\"z\"><block type=\"coord_z\"></block></value><value name=\"range\"><block type=\"math_number\"><field name=\"NUM\">10</field></block></value></block></next></block><block type=\"variables_set_number\" x=\"265\" y=\"288\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:dirX</field></block><block type=\"variables_set_number\" x=\"293\" y=\"344\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:dirX</field></block><block type=\"variables_set_number\" x=\"321\" y=\"400\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:dirX</field></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

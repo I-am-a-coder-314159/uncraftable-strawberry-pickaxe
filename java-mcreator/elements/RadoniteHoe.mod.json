@@ -1,0 +1,38 @@
+{
+  "_fv": 89,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Hoe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "radonite_hoe",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Radonite Hoe",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      "TOOLS"
+    ],
+    "efficiency": 6.0,
+    "attackSpeed": 3.0,
+    "enchantability": 14,
+    "damageVsEntity": 1.0,
+    "usageCount": 254,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      "CUSTOM:RadoniteIngot"
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
+    "attributeModifiers": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
