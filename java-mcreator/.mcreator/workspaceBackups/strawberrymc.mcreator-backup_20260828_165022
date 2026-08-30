@@ -1,0 +1,623 @@
+{
+  "mod_elements": [
+    {
+      "name": "Radiation",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/damage_type/radiation.json"
+        ]
+      }
+    },
+    {
+      "name": "RadiationTolerance",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation_tolerance",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "RadoniteIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/RadoniteIngotItem.java",
+          "src/main/resources/assets/strawberrymc/items/radonite_ingot.json",
+          "src/main/resources/assets/strawberrymc/models/item/radonite_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/radonite_ore.json",
+          "src/main/resources/assets/strawberrymc/items/radonite_ore.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/radonite_ore.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/radonite_ore.json",
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/radonite_ore_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/radonite_ore.json",
+          "src/main/resources/assets/strawberrymc/models/block/radonite_ore.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/RadoniteOreBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/radonite_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/radonite_block.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/RadoniteBlockBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/radonite_block.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/radonite_block.json",
+          "src/main/resources/assets/strawberrymc/models/item/radonite_block.json",
+          "src/main/resources/assets/strawberrymc/items/radonite_block.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_ore_block_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/radonite_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/radonite_block_ore_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/radonite_ore_smelting.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_ore_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "RadonitePickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/radonite_pickaxe.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/RadonitePickaxeItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/radonite_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/radonite_axe.json",
+          "src/main/resources/assets/strawberrymc/items/radonite_axe.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/RadoniteAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/radonite_sword.json",
+          "src/main/resources/assets/strawberrymc/models/item/radonite_sword.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/RadoniteSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/RadoniteShovelItem.java",
+          "src/main/resources/assets/strawberrymc/items/radonite_shovel.json",
+          "src/main/resources/assets/strawberrymc/models/item/radonite_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/radonite_hoe.json",
+          "src/main/resources/assets/strawberrymc/items/radonite_hoe.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/RadoniteHoeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RadonitePickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_pickaxe_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/radonite_pickaxe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_axe_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/radonite_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_sword_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/radonite_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_shovel_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/radonite_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_hoe_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/radonite_hoe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/equipment/radonite_armor.json",
+          "src/main/resources/assets/strawberrymc/models/item/radonite_armor_helmet.json",
+          "src/main/resources/assets/strawberrymc/items/radonite_armor_leggings.json",
+          "src/main/resources/assets/strawberrymc/items/radonite_armor_boots.json",
+          "src/main/resources/assets/strawberrymc/models/item/radonite_armor_boots.json",
+          "src/main/java/com/nobigcorps/strawberrymc/client/renderer/item/RadoniteArmorArmor.java",
+          "src/main/resources/assets/strawberrymc/items/radonite_armor_chestplate.json",
+          "src/main/resources/assets/strawberrymc/models/item/radonite_armor_leggings.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/RadoniteArmorItem.java",
+          "src/main/resources/assets/strawberrymc/items/radonite_armor_helmet.json",
+          "src/main/resources/assets/strawberrymc/models/item/radonite_armor_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_armor_helmet_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/radonite_armor_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_armor_chestplate_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/radonite_armor_chestplate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_armor_leggings_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/radonite_armor_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RadoniteArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radonite_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/radonite_armor_boots_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/radonite_armor_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CalculateRadiationDamageProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calculate_radiation_damage_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/CalculateRadiationDamageProcedureProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Radiation",
+      "type": "blockstate",
+      "scope": "world",
+      "value": "Blocks.AIR.defaultBlockState()"
+    },
+    {
+      "name": "RadiationCount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:strawberrymc:radonite_pickaxe_repair_items": [
+      "~RadonitePickaxe@CUSTOM:RadoniteIngot"
+    ],
+    "ITEMS:strawberrymc:radonite_axe_repair_items": [
+      "~RadoniteAxe@CUSTOM:RadoniteIngot"
+    ],
+    "ITEMS:strawberrymc:radonite_sword_repair_items": [
+      "~RadoniteSword@CUSTOM:RadoniteIngot"
+    ],
+    "ITEMS:strawberrymc:radonite_shovel_repair_items": [
+      "~RadoniteShovel@CUSTOM:RadoniteIngot"
+    ],
+    "ITEMS:strawberrymc:radonite_hoe_repair_items": [
+      "~RadoniteHoe@CUSTOM:RadoniteIngot"
+    ],
+    "ITEMS:strawberrymc:radonite_armor_repair_items": [
+      "~RadoniteArmor@CUSTOM:RadoniteIngot"
+    ],
+    "ITEMS:minecraft:enchantable/head_armor": [
+      "CUSTOM:RadoniteArmor.helmet"
+    ],
+    "ITEMS:minecraft:enchantable/chest_armor": [
+      "CUSTOM:RadoniteArmor.body"
+    ],
+    "ITEMS:minecraft:enchantable/leg_armor": [
+      "CUSTOM:RadoniteArmor.legs"
+    ],
+    "ITEMS:minecraft:enchantable/foot_armor": [
+      "CUSTOM:RadoniteArmor.boots"
+    ],
+    "ITEMS:minecraft:enchantable/weapon": [
+      "CUSTOM:RadoniteSword",
+      "CUSTOM:RadoniteAxe"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "CUSTOM:RadonitePickaxe",
+      "CUSTOM:RadoniteAxe",
+      "CUSTOM:RadoniteSword",
+      "CUSTOM:RadoniteShovel",
+      "CUSTOM:RadoniteHoe",
+      "CUSTOM:RadoniteArmor.helmet",
+      "CUSTOM:RadoniteArmor.body",
+      "CUSTOM:RadoniteArmor.legs",
+      "CUSTOM:RadoniteArmor.boots"
+    ],
+    "ITEMS:minecraft:enchantable/armor": [
+      "CUSTOM:RadoniteArmor.helmet",
+      "CUSTOM:RadoniteArmor.body",
+      "CUSTOM:RadoniteArmor.legs",
+      "CUSTOM:RadoniteArmor.boots"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~RadoniteBlock@CUSTOM:RadoniteBlock",
+      "~RadoniteOre@CUSTOM:RadoniteOre"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~RadoniteBlock@CUSTOM:RadoniteBlock",
+      "~RadoniteOre@CUSTOM:RadoniteOre"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~RadonitePickaxe@CUSTOM:RadonitePickaxe"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~RadoniteAxe@CUSTOM:RadoniteAxe"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~RadoniteSword@CUSTOM:RadoniteSword"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~RadoniteShovel@CUSTOM:RadoniteShovel"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~RadoniteHoe@CUSTOM:RadoniteHoe"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~RadoniteArmor@CUSTOM:RadoniteArmor.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~RadoniteArmor@CUSTOM:RadoniteArmor.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~RadoniteArmor@CUSTOM:RadoniteArmor.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~RadoniteArmor@CUSTOM:RadoniteArmor.boots"
+    ],
+    "BLOCKS:strawberrymc:radiation_shielding_99": [
+      "Blocks.GOLD_BLOCK",
+      "Blocks.ANCIENT_DEBRIS",
+      "Blocks.NETHERITE_BLOCK"
+    ],
+    "BLOCKS:strawberrymc:radiation_shielding_88": [
+      "Blocks.RAW_GOLD_BLOCK"
+    ],
+    "BLOCKS:strawberrymc:radiation_shielding_85": [
+      "Blocks.ANVIL#0",
+      "Blocks.ANVIL#1",
+      "Blocks.ANVIL#2",
+      "Blocks.IRON_BLOCK",
+      "Blocks.BEACON",
+      "Blocks.COPPER_BLOCK",
+      "Blocks.EXPOSED_COPPER",
+      "Blocks.WEATHERED_COPPER",
+      "Blocks.OXIDIZED_COPPER",
+      "Blocks.WAXED_COPPER_BLOCK",
+      "Blocks.WAXED_EXPOSED_COPPER",
+      "Blocks.WAXED_WEATHERED_COPPER",
+      "Blocks.WAXED_OXIDIZED_COPPER",
+      "Blocks.CUT_COPPER",
+      "Blocks.EXPOSED_CUT_COPPER",
+      "Blocks.WEATHERED_CUT_COPPER",
+      "Blocks.OXIDIZED_CUT_COPPER",
+      "Blocks.WAXED_CUT_COPPER",
+      "Blocks.WAXED_EXPOSED_CUT_COPPER",
+      "Blocks.WAXED_WEATHERED_CUT_COPPER",
+      "Blocks.WAXED_OXIDIZED_CUT_COPPER",
+      "Blocks.CHISELED_COPPER",
+      "Blocks.EXPOSED_CHISELED_COPPER",
+      "Blocks.WEATHERED_CHISELED_COPPER",
+      "Blocks.OXIDIZED_CHISELED_COPPER",
+      "Blocks.WAXED_CHISELED_COPPER",
+      "Blocks.WAXED_EXPOSED_CHISELED_COPPER",
+      "Blocks.WAXED_WEATHERED_CHISELED_COPPER",
+      "Blocks.WAXED_OXIDIZED_CHISELED_COPPER",
+      "Blocks.CUT_COPPER_STAIRS",
+      "Blocks.EXPOSED_CUT_COPPER_STAIRS",
+      "Blocks.WEATHERED_CUT_COPPER_STAIRS",
+      "Blocks.OXIDIZED_CUT_COPPER_STAIRS",
+      "Blocks.WAXED_CUT_COPPER_STAIRS",
+      "Blocks.WAXED_EXPOSED_CUT_COPPER_STAIRS",
+      "Blocks.WAXED_WEATHERED_CUT_COPPER_STAIRS",
+      "Blocks.WAXED_OXIDIZED_CUT_COPPER_STAIRS",
+      "Blocks.CUT_COPPER_SLAB",
+      "Blocks.EXPOSED_CUT_COPPER_SLAB",
+      "Blocks.WEATHERED_CUT_COPPER_SLAB",
+      "Blocks.OXIDIZED_CUT_COPPER_SLAB",
+      "Blocks.WAXED_CUT_COPPER_SLAB",
+      "Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB",
+      "Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB",
+      "Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB",
+      "Blocks.COPPER_BULB",
+      "Blocks.EXPOSED_COPPER_BULB",
+      "Blocks.WEATHERED_COPPER_BULB",
+      "Blocks.OXIDIZED_COPPER_BULB",
+      "Blocks.WAXED_COPPER_BULB",
+      "Blocks.WAXED_EXPOSED_COPPER_BULB",
+      "Blocks.WAXED_WEATHERED_COPPER_BULB",
+      "Blocks.WAXED_OXIDIZED_COPPER_BULB"
+    ],
+    "BLOCKS:strawberrymc:radiation_shielding_95": [
+      "Blocks.BEDROCK",
+      "Blocks.TEST_BLOCK",
+      "Blocks.TEST_INSTANCE_BLOCK",
+      "Blocks.BARRIER",
+      "Blocks.STRUCTURE_VOID",
+      "Blocks.STRUCTURE_BLOCK"
+    ],
+    "BLOCKS:strawberrymc:radiation_shielding_75": [
+      "Blocks.RAW_IRON_BLOCK",
+      "Blocks.RAW_COPPER_BLOCK",
+      "Blocks.BLAST_FURNACE",
+      "Blocks.SMOKER",
+      "Blocks.MOB_SPAWNER",
+      "Blocks.LIGHTNING_ROD",
+      "Blocks.EXPOSED_LIGHTNING_ROD",
+      "Blocks.WEATHERED_LIGHTNING_ROD",
+      "Blocks.OXIDIZED_LIGHTNING_ROD",
+      "Blocks.WAXED_LIGHTNING_ROD",
+      "Blocks.WAXED_EXPOSED_LIGHTNING_ROD",
+      "Blocks.WAXED_WEATHERED_LIGHTNING_ROD",
+      "Blocks.WAXED_OXIDIZED_LIGHTNING_ROD"
+    ],
+    "BLOCKS:strawberrymc:radiation_shielding_55": []
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.strawberrymc.palm_log": "Palm Log",
+      "item.strawberrymc.palm_wood": "Palm Wood",
+      "item.strawberrymc.stripped_palm_log": "Stripped Palm Log",
+      "item.strawberrymc.stripped_palm_wood": "Stripped Palm Wood",
+      "item.strawberrymc.palm_planks": "Palm Planks",
+      "item.strawberrymc.palm_leaves": "Palm Leaves",
+      "item.strawberrymc.palm_stairs": "Palm Stairs",
+      "item.strawberrymc.palm_slab": "Palm Slab",
+      "item.strawberrymc.palm_fence": "Palm Fence",
+      "item.strawberrymc.palm_fence_gate": "Palm Fence Gate",
+      "item.strawberrymc.palm_door": "Palm Door",
+      "item.strawberrymc.palm_trapdoor": "Palm Trapdoor",
+      "item.strawberrymc.palm_pressure_plate": "Palm Pressure Plate",
+      "item.strawberrymc.palm_button": "Palm Button",
+      "item.strawberrymc.palm_sign": "Palm Sign",
+      "item.strawberrymc.palm_hanging_sign": "Palm Hanging Sign",
+      "entity.strawberrymc.palm_boat": "Palm Boat",
+      "item.strawberrymc.palm_boat": "Palm Boat",
+      "item.strawberrymc.palm_chest_boat": "Palm Boat with Chest",
+      "entity.strawberrymc.palm_chest_boat": "Palm Boat with Chest",
+      "biome.strawberrymc.clover_glade": "Clover Glade",
+      "item.strawberrymc.radonite_ingot": "Radonite",
+      "item.strawberrymc.radonite_ore": "Radonite Ore",
+      "item.strawberrymc.radonite_block": "Block of Radonite",
+      "item.strawberrymc.radonite_pickaxe": "Radonite Pickaxe",
+      "item.strawberrymc.radonite_axe": "Radonite Axe",
+      "item.strawberrymc.radonite_sword": "Radonite Sword",
+      "item.strawberrymc.radonite_shovel": "Radonite Shovel",
+      "item.strawberrymc.radonite_hoe": "Radonite Hoe",
+      "item.strawberrymc.radonite_armor_helmet": "Radonite Helmet",
+      "item.strawberrymc.radonite_armor_leggings": "Radonite Leggings",
+      "item.strawberrymc.radonite_armor_boots": "Radonite Boots",
+      "item.strawberrymc.radonite_armor_chestplate": "Radonite Chestplate",
+      "item.strawberrymc.metal_ingot": "Metal",
+      "item.strawberrymc.metal_ore": "Metal Ore",
+      "item.strawberrymc.metal_block": "Block of Metal",
+      "death.attack.radiation": "%1$s died of radiation",
+      "death.attack.radiation.player": "%1$s died whilst trying to escape the radiation of %2$s",
+      "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s (§kTheEnd§r)",
+      "attribute.strawberrymc.radiation_tolerance": "Radiation Tolerance"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModAttributes.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModBlocks.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModItems.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModTabs.java",
+      "src/main/java/com/nobigcorps/strawberrymc/network/StrawberrymcModVariables.java",
+      "src/main/java/com/nobigcorps/strawberrymc/StrawberrymcMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "strawberrymc",
+    "modName": "Strawberry Minecraft",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-26.1.2",
+    "modElementsPackage": "com.nobigcorps.strawberrymc"
+  },
+  "mcreatorVersion": 202600233518
+}
