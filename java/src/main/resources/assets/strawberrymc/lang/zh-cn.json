@@ -7,11 +7,11 @@
   "strawberrymc.configuration.magicNumberIntroduction": "神奇数字 案文",
   "strawberrymc.configuration.magicNumber": "神奇数字",
 
-  "block.strawberrymc.palm_log": "棕榈 木头",
-  "block.strawberrymc.palm_wood": "棕榈 木",
+  "block.strawberrymc.palm_log": "棕榈 原木",
+  "block.strawberrymc.palm_wood": "棕榈 木头",
   "block.strawberrymc.palm_planks": "棕榈 木板",
-  "item.strawberrymc.palm_log": "棕榈 木头",
-  "item.strawberrymc.palm_wood": "棕榈 木",
+  "item.strawberrymc.palm_log": "棕榈 原木",
+  "item.strawberrymc.palm_wood": "棕榈 木头",
   "item.strawberrymc.palm_planks": "棕榈 木板",
   "item.strawberrymc.coconut": "椰子"
 }
