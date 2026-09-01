@@ -38,6 +38,7 @@ import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 
 import com.nobigcorps.strawberrymc.network.StrawberrymcModVariables;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModTabs;
+import com.nobigcorps.strawberrymc.init.StrawberrymcModMenus;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModItems;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModBlocks;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModAttributes;
@@ -56,6 +57,7 @@ public class StrawberrymcMod {
 		StrawberrymcModItems.REGISTRY.register(modEventBus);
 		StrawberrymcModTabs.REGISTRY.register(modEventBus);
 		StrawberrymcModVariables.ATTACHMENT_TYPES.register(modEventBus);
+		StrawberrymcModMenus.REGISTRY.register(modEventBus);
 		StrawberrymcModAttributes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init

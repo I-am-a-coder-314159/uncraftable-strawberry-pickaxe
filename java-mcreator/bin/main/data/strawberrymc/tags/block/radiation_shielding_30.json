@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:red_sandstone_slab",
+    "minecraft:red_sandstone_wall",
+    "minecraft:sandstone_slab",
+    "minecraft:smooth_sandstone_stairs",
+    "minecraft:mud_brick_slab",
+    "minecraft:smooth_red_sandstone_slab",
+    "minecraft:red_sandstone",
+    "minecraft:chiseled_red_sandstone",
+    "minecraft:cut_red_sandstone",
+    "minecraft:smooth_sandstone",
+    "minecraft:sandstone_wall",
+    "minecraft:packed_mud",
+    "minecraft:mud_brick_wall",
+    "minecraft:red_sandstone_stairs",
+    "minecraft:cut_sandstone",
+    "minecraft:mud_bricks",
+    "minecraft:mud_brick_stairs",
+    "minecraft:cut_red_sandstone_slab",
+    "minecraft:chiseled_sandstone",
+    "minecraft:sandstone",
+    "minecraft:smooth_red_sandstone_stairs",
+    "minecraft:smooth_sandstone_slab",
+    "minecraft:smooth_red_sandstone",
+    "minecraft:cut_sandstone_slab",
+    "minecraft:sandstone_stairs",
+    "minecraft:blue_ice"
+  ]
+}

@@ -350,6 +350,13 @@
           "src/main/java/com/nobigcorps/strawberrymc/procedures/CalculateRadiationDamageProcedureProcedure.java"
         ]
       }
+    },
+    {
+      "name": "FletchingTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fletching_table_gui"
     }
   ],
   "variable_elements": [
@@ -771,7 +778,8 @@
       "Blocks.MUD_BRICK_SLAB",
       "Blocks.MUD_BRICK_WALL",
       "Blocks.BLUE_ICE"
-    ]
+    ],
+    "ITEMS:strawberrymc:valid_arrow_tips": []
   },
   "tab_element_order": {},
   "language_map": {
@@ -814,7 +822,7 @@
       "item.strawberrymc.metal_block": "Block of Metal",
       "death.attack.radiation": "%1$s died of radiation",
       "death.attack.radiation.player": "%1$s died whilst trying to escape the radiation of %2$s",
-      "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s (§kTheEnd§r)",
+      "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s",
       "attribute.strawberrymc.radiation_tolerance": "Radiation Tolerance"
     }
   },
