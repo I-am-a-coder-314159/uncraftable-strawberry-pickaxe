@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#strawberrymc:echowood_logs",
+      "required": false
+    }
+  ]
+}

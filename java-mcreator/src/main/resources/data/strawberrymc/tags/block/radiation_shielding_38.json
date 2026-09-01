@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:tuff_stairs",
+    "minecraft:mossy_cobblestone_slab",
+    "minecraft:tuff_slab",
+    "minecraft:tuff_brick_stairs",
+    "minecraft:cobblestone_wall",
+    "minecraft:mossy_cobblestone_wall",
+    "minecraft:tuff_brick_slab",
+    "minecraft:polished_tuff_slab",
+    "minecraft:mossy_cobblestone_stairs",
+    "minecraft:tuff_bricks",
+    "minecraft:cobblestone_slab",
+    "minecraft:polished_tuff",
+    "minecraft:infested_cobblestone",
+    "minecraft:calcite",
+    "minecraft:chiseled_tuff_bricks",
+    "minecraft:tuff",
+    "minecraft:tuff_wall",
+    "minecraft:mossy_cobblestone",
+    "minecraft:tuff_brick_wall",
+    "minecraft:chiseled_tuff",
+    "minecraft:cobblestone",
+    "minecraft:polished_tuff_stairs",
+    "minecraft:polished_tuff_wall",
+    "minecraft:cobblestone_stairs"
+  ]
+}

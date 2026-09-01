@@ -25,17 +25,37 @@ public class StrawberrymcModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.RADONITE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.RADONITE_BLOCK.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LOG.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_WOOD.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.STRIPPED_ECHOWOOD_LOG.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.STRIPPED_ECHOWOOD_WOOD.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_PLANKS.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_STAIRS.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SLAB.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_FENCE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_FENCE_GATE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_DOOR.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_TRAPDOOR.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_PRESSURE_PLATE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_BUTTON.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(StrawberrymcModItems.RADONITE_PICKAXE.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_AXE.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_SHOVEL.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_HOE.get());
+			tabData.accept(StrawberrymcModItems.ECHOWOOD_BOAT.get());
+			tabData.accept(StrawberrymcModItems.ECHOWOOD_CHEST_BOAT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(StrawberrymcModItems.RADONITE_SWORD.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_HELMET.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_CHESTPLATE.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_LEGGINGS.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_BOOTS.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LEAVES.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());
 		}
 	}
 }

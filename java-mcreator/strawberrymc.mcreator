@@ -350,6 +350,536 @@
           "src/main/java/com/nobigcorps/strawberrymc/procedures/CalculateRadiationDamageProcedureProcedure.java"
         ]
       }
+    },
+    {
+      "name": "EchowoodLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/echowood_log.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_log.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodLogBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_log.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_log.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_log.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_wood.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_wood.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_wood.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_wood.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_wood.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodWoodBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "StrippedEchowoodLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_echowood_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/stripped_echowood_log.json",
+          "src/main/resources/assets/strawberrymc/blockstates/stripped_echowood_log.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/StrippedEchowoodLogBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/stripped_echowood_log.json",
+          "src/main/resources/assets/strawberrymc/items/stripped_echowood_log.json",
+          "src/main/resources/assets/strawberrymc/models/item/stripped_echowood_log.json"
+        ]
+      }
+    },
+    {
+      "name": "StrippedEchowoodWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_echowood_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/stripped_echowood_wood.json",
+          "src/main/resources/assets/strawberrymc/models/item/stripped_echowood_wood.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/StrippedEchowoodWoodBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/stripped_echowood_wood.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/stripped_echowood_wood.json",
+          "src/main/resources/assets/strawberrymc/blockstates/stripped_echowood_wood.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodPlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_planks.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_planks.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_planks.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_planks.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_planks.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodPlanksBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodLeavesBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_leaves.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_leaves.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_leaves.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_leaves.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/echowood_stairs.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_stairs.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_stairs.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_stairs_inner.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_stairs_outer.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_stairs.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodStairsBlock.java",
+          "src/main/resources/assets/strawberrymc/items/echowood_stairs.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/echowood_slab_top.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_slab.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_slab.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_slab_full.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_slab.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodSlabBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_slab.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_fence",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodFenceBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_fence.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_fence.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_fence.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_fence.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_fence_inventory.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_fence.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_fence_post.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/echowood_fence_gate_wall.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_fence_gate_open.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_fence_gate_wall_open.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodFenceGateBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_fence_gate.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_fence_gate.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/echowood_door.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_door_top_right.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_door_bottom_right.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_door_top_left_open.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_door.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_door.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_door_bottom_left.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_door_top_left.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodDoorBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_door_top_right_open.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_door.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_door_bottom_left_open.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_door_bottom_right_open.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodTrapdoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/echowood_trapdoor_top.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_trapdoor.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_trapdoor.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_trapdoor.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_trapdoor.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_trapdoor_open.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodTrapdoorBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_trapdoor.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodPressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/echowood_pressure_plate_down.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_pressure_plate.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodPressurePlateBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_button.json",
+          "src/main/resources/assets/strawberrymc/items/echowood_button.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_button_pressed.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_button_inventory.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodButtonBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_button.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_button.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_button.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_sign.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_sign.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodSignBlock.java",
+          "src/main/resources/assets/strawberrymc/items/echowood_sign.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_wall_sign.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_sign.json",
+          "src/main/resources/assets/strawberrymc/models/block/echowood_sign.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodWallSignBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodHangingSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_hanging_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/echowood_hanging_sign.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_wall_hanging_sign.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodWallHangingSignBlock.java",
+          "src/main/resources/assets/strawberrymc/items/echowood_hanging_sign.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/echowood_hanging_sign.json",
+          "src/main/resources/assets/strawberrymc/blockstates/echowood_hanging_sign.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EchowoodHangingSignBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_hanging_sign.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodBoat",
+      "type": "specialentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_boat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/echowood_boat.json",
+          "src/main/java/com/nobigcorps/strawberrymc/entity/EchowoodBoatEntity.java",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_boat.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodChestBoat",
+      "type": "specialentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_chest_boat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/echowood_chest_boat.json",
+          "src/main/resources/assets/strawberrymc/models/item/echowood_chest_boat.json",
+          "src/main/java/com/nobigcorps/strawberrymc/entity/EchowoodChestBoatEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodLeavesComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_leaves_composting",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "EchowoodWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/echowood_wood_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StrippedEchowoodWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_echowood_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/stripped_echowood_wood_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/stripped_echowood_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodPlanksRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/echowood_planks_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_planks_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/echowood_stairs_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_stairs_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/echowood_slab_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_fence_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/echowood_fence_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/echowood_fence_gate_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_fence_gate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodDoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_door_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/echowood_door_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodTrapdoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/echowood_trapdoor_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_trapdoor_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_pressure_plate_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/echowood_pressure_plate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/echowood_button_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_button_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_sign_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/echowood_sign_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/echowood_hanging_sign_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_hanging_sign_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodBoatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_boat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_boat_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/echowood_boat_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "EchowoodChestBoatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "echowood_chest_boat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/echowood_chest_boat_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/echowood_chest_boat_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -771,6 +1301,100 @@
       "Blocks.MUD_BRICK_SLAB",
       "Blocks.MUD_BRICK_WALL",
       "Blocks.BLUE_ICE"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~EchowoodLog@CUSTOM:EchowoodLog",
+      "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign",
+      "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign.wall",
+      "~EchowoodSign@CUSTOM:EchowoodSign.wall",
+      "~EchowoodSign@CUSTOM:EchowoodSign",
+      "~EchowoodButton@CUSTOM:EchowoodButton",
+      "~EchowoodPressurePlate@CUSTOM:EchowoodPressurePlate",
+      "~EchowoodTrapdoor@CUSTOM:EchowoodTrapdoor",
+      "~EchowoodDoor@CUSTOM:EchowoodDoor",
+      "~EchowoodFenceGate@CUSTOM:EchowoodFenceGate",
+      "~EchowoodFence@CUSTOM:EchowoodFence",
+      "~EchowoodSlab@CUSTOM:EchowoodSlab",
+      "~EchowoodStairs@CUSTOM:EchowoodStairs",
+      "~EchowoodPlanks@CUSTOM:EchowoodPlanks",
+      "~StrippedEchowoodWood@CUSTOM:StrippedEchowoodWood",
+      "~StrippedEchowoodLog@CUSTOM:StrippedEchowoodLog",
+      "~EchowoodWood@CUSTOM:EchowoodWood"
+    ],
+    "BLOCKS:mod:echowood_logs": [
+      "CUSTOM:EchowoodLog",
+      "CUSTOM:EchowoodWood",
+      "CUSTOM:StrippedEchowoodLog",
+      "CUSTOM:StrippedEchowoodWood"
+    ],
+    "BLOCKS:minecraft:logs_that_burn": [
+      "TAG:mod:echowood_logs"
+    ],
+    "BLOCKS:minecraft:planks": [
+      "CUSTOM:EchowoodPlanks"
+    ],
+    "ITEMS:mod:echowood_logs": [
+      "CUSTOM:EchowoodLog",
+      "CUSTOM:EchowoodWood",
+      "CUSTOM:StrippedEchowoodLog",
+      "CUSTOM:StrippedEchowoodWood"
+    ],
+    "ITEMS:minecraft:logs_that_burn": [
+      "TAG:mod:echowood_logs"
+    ],
+    "ITEMS:minecraft:planks": [
+      "CUSTOM:EchowoodPlanks"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~EchowoodLeaves@CUSTOM:EchowoodLeaves"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~EchowoodLeaves@CUSTOM:EchowoodLeaves"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~EchowoodStairs@CUSTOM:EchowoodStairs"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~EchowoodSlab@CUSTOM:EchowoodSlab"
+    ],
+    "BLOCKS:minecraft:wooden_fences": [
+      "~EchowoodFence@CUSTOM:EchowoodFence"
+    ],
+    "BLOCKS:minecraft:wooden_doors": [
+      "~EchowoodDoor@CUSTOM:EchowoodDoor"
+    ],
+    "BLOCKS:minecraft:wooden_trapdoors": [
+      "~EchowoodTrapdoor@CUSTOM:EchowoodTrapdoor"
+    ],
+    "BLOCKS:minecraft:wooden_pressure_plates": [
+      "~EchowoodPressurePlate@CUSTOM:EchowoodPressurePlate"
+    ],
+    "BLOCKS:minecraft:wooden_buttons": [
+      "~EchowoodButton@CUSTOM:EchowoodButton"
+    ],
+    "BLOCKS:minecraft:standing_signs": [
+      "~EchowoodSign@CUSTOM:EchowoodSign"
+    ],
+    "BLOCKS:minecraft:wall_signs": [
+      "~EchowoodSign@CUSTOM:EchowoodSign.wall"
+    ],
+    "BLOCKS:minecraft:ceiling_hanging_signs": [
+      "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign"
+    ],
+    "BLOCKS:minecraft:wall_hanging_signs": [
+      "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign.wall"
+    ],
+    "ENTITIES:minecraft:boat": [
+      "~EchowoodBoat@CUSTOM:EchowoodBoat"
+    ],
+    "ITEMS:minecraft:boats": [
+      "~EchowoodBoat@CUSTOM:EchowoodBoat"
+    ],
+    "ENTITIES:c:boats": [
+      "~EchowoodChestBoat@CUSTOM:EchowoodChestBoat"
+    ],
+    "ITEMS:minecraft:chest_boats": [
+      "~EchowoodChestBoat@CUSTOM:EchowoodChestBoat"
     ]
   },
   "tab_element_order": {},
@@ -815,20 +1439,46 @@
       "death.attack.radiation": "%1$s died of radiation",
       "death.attack.radiation.player": "%1$s died whilst trying to escape the radiation of %2$s",
       "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s (§kTheEnd§r)",
-      "attribute.strawberrymc.radiation_tolerance": "Radiation Tolerance"
+      "attribute.strawberrymc.radiation_tolerance": "Radiation Tolerance",
+      "item.strawberrymc.echowood_log": "Echowood Log",
+      "item.strawberrymc.echowood_wood": "Echowood Wood",
+      "item.strawberrymc.stripped_echowood_log": "Stripped Echowood Log",
+      "item.strawberrymc.stripped_echowood_wood": "Stripped Echowood Wood",
+      "item.strawberrymc.echowood_planks": "Echowood Planks",
+      "item.strawberrymc.echowood_leaves": "Echowood Leaves",
+      "item.strawberrymc.echowood_stairs": "Echowood Stairs",
+      "item.strawberrymc.echowood_slab": "Echowood Slab",
+      "item.strawberrymc.echowood_fence": "Echowood Fence",
+      "item.strawberrymc.echowood_fence_gate": "Echowood Fence Gate",
+      "item.strawberrymc.echowood_door": "Echowood Door",
+      "item.strawberrymc.echowood_trapdoor": "Echowood Trapdoor",
+      "item.strawberrymc.echowood_pressure_plate": "Echowood Pressure Plate",
+      "item.strawberrymc.echowood_button": "Echowood Button",
+      "item.strawberrymc.echowood_sign": "Echowood Sign",
+      "item.strawberrymc.echowood_hanging_sign": "Echowood Hanging Sign",
+      "item.strawberrymc.echowood_boat": "Echowood Boat",
+      "entity.strawberrymc.echowood_boat": "Echowood Boat",
+      "entity.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest",
+      "item.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModAttributes.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModWoodTypes.java",
+      "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModItems.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModTabs.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModEntities.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/com/nobigcorps/strawberrymc/network/StrawberrymcModVariables.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModTabs.java",
       "src/main/java/com/nobigcorps/strawberrymc/StrawberrymcMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModModels.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModDispenseBehaviors.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {

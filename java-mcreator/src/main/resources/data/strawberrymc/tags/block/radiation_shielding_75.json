@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:waxed_lightning_rod",
+    "minecraft:waxed_oxidized_lightning_rod",
+    "minecraft:smoker",
+    "minecraft:spawner",
+    "minecraft:oxidized_lightning_rod",
+    "minecraft:blast_furnace",
+    "minecraft:waxed_exposed_lightning_rod",
+    "minecraft:weathered_lightning_rod",
+    "minecraft:raw_copper_block",
+    "minecraft:lightning_rod",
+    "minecraft:exposed_lightning_rod",
+    "minecraft:raw_iron_block",
+    "minecraft:waxed_weathered_lightning_rod",
+    "minecraft:sea_lantern"
+  ]
+}
