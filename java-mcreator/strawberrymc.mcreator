@@ -356,7 +356,13 @@
       "type": "gui",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fletching_table_gui"
+      "registry_name": "fletching_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/client/gui/FletchingTableGUIScreen.java",
+          "src/main/java/com/nobigcorps/strawberrymc/world/inventory/FletchingTableGUIMenu.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -829,6 +835,9 @@
   "metadata": {
     "files": [
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModAttributes.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModMenus.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModScreens.java",
+      "src/main/java/com/nobigcorps/strawberrymc/network/MenuStateUpdateMessage.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
