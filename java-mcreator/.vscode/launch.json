@@ -12,13 +12,13 @@
       "projectName": "java-mcreator",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\clientRunProgramArgs.txt"
+        "@/Users/shashankaggarwal/Documents/nonmints 2.0/uncraftable-strawberry-pickaxe/java-mcreator/build/moddev/clientRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\clientRunVmArgs.txt",
-        "-Dfml.modFolders\u003dmcreator%%C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\bin\\main"
+        "@/Users/shashankaggarwal/Documents/nonmints 2.0/uncraftable-strawberry-pickaxe/java-mcreator/build/moddev/clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/Users/shashankaggarwal/Documents/nonmints 2.0/uncraftable-strawberry-pickaxe/java-mcreator/bin/main"
       ],
-      "cwd": "${workspaceFolder}\\run",
+      "cwd": "${workspaceFolder}/run",
       "env": {},
       "console": "internalConsole",
       "shortenCommandLine": "none"
@@ -34,13 +34,13 @@
       "projectName": "java-mcreator",
       "mainClass": "net.neoforged.devlaunch.Main",
       "args": [
-        "@C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\serverRunProgramArgs.txt"
+        "@/Users/shashankaggarwal/Documents/nonmints 2.0/uncraftable-strawberry-pickaxe/java-mcreator/build/moddev/serverRunProgramArgs.txt"
       ],
       "vmArgs": [
-        "@C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\serverRunVmArgs.txt",
-        "-Dfml.modFolders\u003dmcreator%%C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\bin\\main"
+        "@/Users/shashankaggarwal/Documents/nonmints 2.0/uncraftable-strawberry-pickaxe/java-mcreator/build/moddev/serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%/Users/shashankaggarwal/Documents/nonmints 2.0/uncraftable-strawberry-pickaxe/java-mcreator/bin/main"
       ],
-      "cwd": "${workspaceFolder}\\run",
+      "cwd": "${workspaceFolder}/run",
       "env": {},
       "console": "internalConsole",
       "shortenCommandLine": "none"

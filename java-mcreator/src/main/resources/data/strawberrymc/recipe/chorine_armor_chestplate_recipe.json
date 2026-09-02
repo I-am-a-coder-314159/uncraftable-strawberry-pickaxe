@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "strawberrymc:chorine_dust"
+  },
+  "result": {
+    "id": "strawberrymc:chorine_armor_chestplate",
+    "count": 1
+  }
+}

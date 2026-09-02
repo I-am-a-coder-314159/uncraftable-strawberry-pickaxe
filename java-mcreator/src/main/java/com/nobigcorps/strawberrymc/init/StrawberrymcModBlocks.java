@@ -49,6 +49,8 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> SENSEGRASS_MID;
 	public static final DeferredBlock<Block> SENSEGRASS_RETRACT;
 	public static final DeferredBlock<Block> COCONUT_SPROUT;
+	public static final DeferredBlock<Block> CHORINE_ORE;
+	public static final DeferredBlock<Block> CHORINE_BLOCK;
 	static {
 		RADONITE_ORE = register("radonite_ore", RadoniteOreBlock::new);
 		RADONITE_BLOCK = register("radonite_block", RadoniteBlockBlock::new);
@@ -74,6 +76,8 @@ public class StrawberrymcModBlocks {
 		SENSEGRASS_MID = register("sensegrass_mid", SensegrassMidBlock::new);
 		SENSEGRASS_RETRACT = register("sensegrass_retract", SensegrassRetractBlock::new);
 		COCONUT_SPROUT = register("coconut_sprout", CoconutSproutBlock::new);
+		CHORINE_ORE = register("chorine_ore", ChorineOreBlock::new);
+		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
 	}
 
 	// Start of user code block custom blocks

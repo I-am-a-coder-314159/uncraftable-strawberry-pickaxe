@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "strawberrymc:chorine_armor_boots",
     "strawberrymc:radonite_armor_boots"
   ]
 }

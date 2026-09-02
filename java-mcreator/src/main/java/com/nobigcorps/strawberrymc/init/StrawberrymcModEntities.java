@@ -15,6 +15,7 @@ import net.minecraft.core.registries.Registries;
 
 import com.nobigcorps.strawberrymc.entity.EchowoodChestBoatEntity;
 import com.nobigcorps.strawberrymc.entity.EchowoodBoatEntity;
+import com.nobigcorps.strawberrymc.entity.CoconutEntity;
 import com.nobigcorps.strawberrymc.StrawberrymcMod;
 
 public class StrawberrymcModEntities {

@@ -52,6 +52,19 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> SENSEGRASS_RETRACT;
 	public static final DeferredItem<Item> COCONUT_SPROUT;
 	public static final DeferredItem<Item> RAW_COCONUT;
+	public static final DeferredItem<Item> CHORINE_DUST;
+	public static final DeferredItem<Item> CHORINE_ORE;
+	public static final DeferredItem<Item> CHORINE_BLOCK;
+	public static final DeferredItem<Item> CHORINE_PICKAXE;
+	public static final DeferredItem<Item> CHORINE_AXE;
+	public static final DeferredItem<Item> CHORINE_SWORD;
+	public static final DeferredItem<Item> CHORINE_SHOVEL;
+	public static final DeferredItem<Item> CHORINE_HOE;
+	public static final DeferredItem<Item> CHORINE_ARMOR_HELMET;
+	public static final DeferredItem<Item> CHORINE_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> CHORINE_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> CHORINE_ARMOR_BOOTS;
+	public static final DeferredItem<Item> CHORINE_UPGRADE_TEMPLATE;
 	static {
 		RADONITE_INGOT = register("radonite_ingot", RadoniteIngotItem::new);
 		RADONITE_ORE = block(StrawberrymcModBlocks.RADONITE_ORE);
@@ -88,6 +101,19 @@ public class StrawberrymcModItems {
 		SENSEGRASS_RETRACT = block(StrawberrymcModBlocks.SENSEGRASS_RETRACT);
 		COCONUT_SPROUT = block(StrawberrymcModBlocks.COCONUT_SPROUT);
 		RAW_COCONUT = register("raw_coconut", RawCoconutItem::new);
+		CHORINE_DUST = register("chorine_dust", ChorineDustItem::new);
+		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
+		CHORINE_BLOCK = block(StrawberrymcModBlocks.CHORINE_BLOCK);
+		CHORINE_PICKAXE = register("chorine_pickaxe", ChorinePickaxeItem::new);
+		CHORINE_AXE = register("chorine_axe", ChorineAxeItem::new);
+		CHORINE_SWORD = register("chorine_sword", ChorineSwordItem::new);
+		CHORINE_SHOVEL = register("chorine_shovel", ChorineShovelItem::new);
+		CHORINE_HOE = register("chorine_hoe", ChorineHoeItem::new);
+		CHORINE_ARMOR_HELMET = register("chorine_armor_helmet", ChorineArmorItem.Helmet::new);
+		CHORINE_ARMOR_CHESTPLATE = register("chorine_armor_chestplate", ChorineArmorItem.Chestplate::new);
+		CHORINE_ARMOR_LEGGINGS = register("chorine_armor_leggings", ChorineArmorItem.Leggings::new);
+		CHORINE_ARMOR_BOOTS = register("chorine_armor_boots", ChorineArmorItem.Boots::new);
+		CHORINE_UPGRADE_TEMPLATE = register("chorine_upgrade_template", ChorineUpgradeTemplateItem::new);
 	}
 
 	// Start of user code block custom items

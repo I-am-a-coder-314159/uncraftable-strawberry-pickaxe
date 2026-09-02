@@ -26,6 +26,8 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_MID.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_RETRACT.get().asItem());
 			tabData.accept(StrawberrymcModItems.RAW_COCONUT.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_DUST.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_UPGRADE_TEMPLATE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.RADONITE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.RADONITE_BLOCK.get().asItem());
@@ -42,6 +44,8 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_TRAPDOOR.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_PRESSURE_PLATE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_BUTTON.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.CHORINE_ORE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.CHORINE_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(StrawberrymcModItems.RADONITE_PICKAXE.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_AXE.get());
@@ -49,6 +53,10 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_HOE.get());
 			tabData.accept(StrawberrymcModItems.ECHOWOOD_BOAT.get());
 			tabData.accept(StrawberrymcModItems.ECHOWOOD_CHEST_BOAT.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_PICKAXE.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_AXE.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_SHOVEL.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_HOE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(StrawberrymcModItems.RADONITE_SWORD.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_HELMET.get());
@@ -56,6 +64,11 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_LEGGINGS.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_BOOTS.get());
 			tabData.accept(StrawberrymcModItems.RAW_COCONUT.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_SWORD.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_ARMOR_HELMET.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_ARMOR_CHESTPLATE.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_ARMOR_LEGGINGS.get());
+			tabData.accept(StrawberrymcModItems.CHORINE_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LEAVES.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_EXT.get().asItem());
