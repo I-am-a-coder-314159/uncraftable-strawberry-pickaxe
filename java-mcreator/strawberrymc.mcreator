@@ -352,6 +352,7 @@
       }
     },
     {
+<<<<<<< HEAD
       "name": "EchowoodLog",
       "type": "block",
       "compiles": true,
@@ -1087,6 +1088,17 @@
       "metadata": {
         "files": [
           "src/main/java/com/nobigcorps/strawberrymc/entity/CoconutEntity.java"
+=======
+      "name": "FletchingTableGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fletching_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/client/gui/FletchingTableGUIScreen.java",
+          "src/main/java/com/nobigcorps/strawberrymc/world/inventory/FletchingTableGUIMenu.java"
+>>>>>>> e7b77425e3f31239c4796de2681f2b0c67b808eb
         ]
       }
     }
@@ -1511,6 +1523,7 @@
       "Blocks.MUD_BRICK_WALL",
       "Blocks.BLUE_ICE"
     ],
+<<<<<<< HEAD
     "BLOCKS:minecraft:mineable/axe": [
       "~EchowoodLog@CUSTOM:EchowoodLog",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign",
@@ -1611,6 +1624,9 @@
     "BLOCKS:minecraft:mineable/shovel": [
       "~CoconutSprout@CUSTOM:CoconutSprout"
     ]
+=======
+    "ITEMS:strawberrymc:valid_arrow_tips": []
+>>>>>>> e7b77425e3f31239c4796de2681f2b0c67b808eb
   },
   "tab_element_order": {},
   "language_map": {
@@ -1653,6 +1669,7 @@
       "item.strawberrymc.metal_block": "Block of Metal",
       "death.attack.radiation": "%1$s died of radiation",
       "death.attack.radiation.player": "%1$s died whilst trying to escape the radiation of %2$s",
+<<<<<<< HEAD
       "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s (§kTheEnd§r)",
       "attribute.strawberrymc.radiation_tolerance": "Radiation Tolerance",
       "item.strawberrymc.echowood_log": "Echowood Log",
@@ -1683,13 +1700,23 @@
       "death.attack.coconut_impact": "%1$s died",
       "item.strawberrymc.coconut_sprout": "Coconut Sprout",
       "item.strawberrymc.raw_coconut": "Raw Coconut"
+=======
+      "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s",
+      "attribute.strawberrymc.radiation_tolerance": "Radiation Tolerance"
+>>>>>>> e7b77425e3f31239c4796de2681f2b0c67b808eb
     }
   },
   "metadata": {
     "files": [
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModAttributes.java",
+<<<<<<< HEAD
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModWoodTypes.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
+=======
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModMenus.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModScreens.java",
+      "src/main/java/com/nobigcorps/strawberrymc/network/MenuStateUpdateMessage.java",
+>>>>>>> e7b77425e3f31239c4796de2681f2b0c67b808eb
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModEntities.java",
