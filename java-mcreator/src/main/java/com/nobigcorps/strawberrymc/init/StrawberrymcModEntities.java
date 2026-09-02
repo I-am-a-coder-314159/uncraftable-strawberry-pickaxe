@@ -13,8 +13,11 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
+import com.nobigcorps.strawberrymc.entity.PalmChestBoatEntity;
+import com.nobigcorps.strawberrymc.entity.PalmBoatEntity;
 import com.nobigcorps.strawberrymc.entity.EchowoodChestBoatEntity;
 import com.nobigcorps.strawberrymc.entity.EchowoodBoatEntity;
+import com.nobigcorps.strawberrymc.entity.CoconutEntity;
 import com.nobigcorps.strawberrymc.StrawberrymcMod;
 
 public class StrawberrymcModEntities {
@@ -25,6 +28,10 @@ public class StrawberrymcModEntities {
 			EntityType.Builder.<EchowoodChestBoatEntity>of(EchowoodChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 	public static final DeferredHolder<EntityType<?>, EntityType<CoconutEntity>> COCONUT = register("coconut",
 			EntityType.Builder.<CoconutEntity>of(CoconutEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PalmBoatEntity>> PALM_BOAT = register("palm_boat",
+			EntityType.Builder.<PalmBoatEntity>of(PalmBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<PalmChestBoatEntity>> PALM_CHEST_BOAT = register("palm_chest_boat",
+			EntityType.Builder.<PalmChestBoatEntity>of(PalmChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

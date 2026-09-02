@@ -52,6 +52,24 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> SENSEGRASS_RETRACT;
 	public static final DeferredItem<Item> COCONUT_SPROUT;
 	public static final DeferredItem<Item> RAW_COCONUT;
+	public static final DeferredItem<Item> PALM_LOG;
+	public static final DeferredItem<Item> PALM_WOOD;
+	public static final DeferredItem<Item> STRIPPED_PALM_LOG;
+	public static final DeferredItem<Item> STRIPPED_PALM_WOOD;
+	public static final DeferredItem<Item> PALM_PLANKS;
+	public static final DeferredItem<Item> PALM_LEAVES;
+	public static final DeferredItem<Item> PALM_STAIRS;
+	public static final DeferredItem<Item> PALM_SLAB;
+	public static final DeferredItem<Item> PALM_FENCE;
+	public static final DeferredItem<Item> PALM_FENCE_GATE;
+	public static final DeferredItem<Item> PALM_DOOR;
+	public static final DeferredItem<Item> PALM_TRAPDOOR;
+	public static final DeferredItem<Item> PALM_PRESSURE_PLATE;
+	public static final DeferredItem<Item> PALM_BUTTON;
+	public static final DeferredItem<Item> PALM_SIGN;
+	public static final DeferredItem<Item> PALM_HANGING_SIGN;
+	public static final DeferredItem<Item> PALM_BOAT;
+	public static final DeferredItem<Item> PALM_CHEST_BOAT;
 	static {
 		RADONITE_INGOT = register("radonite_ingot", RadoniteIngotItem::new);
 		RADONITE_ORE = block(StrawberrymcModBlocks.RADONITE_ORE);
@@ -88,6 +106,24 @@ public class StrawberrymcModItems {
 		SENSEGRASS_RETRACT = block(StrawberrymcModBlocks.SENSEGRASS_RETRACT);
 		COCONUT_SPROUT = block(StrawberrymcModBlocks.COCONUT_SPROUT);
 		RAW_COCONUT = register("raw_coconut", RawCoconutItem::new);
+		PALM_LOG = block(StrawberrymcModBlocks.PALM_LOG);
+		PALM_WOOD = block(StrawberrymcModBlocks.PALM_WOOD);
+		STRIPPED_PALM_LOG = block(StrawberrymcModBlocks.STRIPPED_PALM_LOG);
+		STRIPPED_PALM_WOOD = block(StrawberrymcModBlocks.STRIPPED_PALM_WOOD);
+		PALM_PLANKS = block(StrawberrymcModBlocks.PALM_PLANKS);
+		PALM_LEAVES = block(StrawberrymcModBlocks.PALM_LEAVES);
+		PALM_STAIRS = block(StrawberrymcModBlocks.PALM_STAIRS);
+		PALM_SLAB = block(StrawberrymcModBlocks.PALM_SLAB);
+		PALM_FENCE = block(StrawberrymcModBlocks.PALM_FENCE);
+		PALM_FENCE_GATE = block(StrawberrymcModBlocks.PALM_FENCE_GATE);
+		PALM_DOOR = doubleBlock(StrawberrymcModBlocks.PALM_DOOR);
+		PALM_TRAPDOOR = block(StrawberrymcModBlocks.PALM_TRAPDOOR);
+		PALM_PRESSURE_PLATE = block(StrawberrymcModBlocks.PALM_PRESSURE_PLATE);
+		PALM_BUTTON = block(StrawberrymcModBlocks.PALM_BUTTON);
+		PALM_SIGN = signBlock(StrawberrymcModBlocks.PALM_SIGN, StrawberrymcModBlocks.PALM_WALL_SIGN, new Item.Properties().stacksTo(16));
+		PALM_HANGING_SIGN = hangingSignBlock(StrawberrymcModBlocks.PALM_HANGING_SIGN, StrawberrymcModBlocks.PALM_WALL_HANGING_SIGN, new Item.Properties().stacksTo(16));
+		PALM_BOAT = register("palm_boat", properties -> new BoatItem(StrawberrymcModEntities.PALM_BOAT.get(), properties.stacksTo(1)));
+		PALM_CHEST_BOAT = register("palm_chest_boat", properties -> new BoatItem(StrawberrymcModEntities.PALM_CHEST_BOAT.get(), properties.stacksTo(1)));
 	}
 
 	// Start of user code block custom items

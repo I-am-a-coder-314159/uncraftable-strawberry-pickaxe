@@ -49,6 +49,24 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> SENSEGRASS_MID;
 	public static final DeferredBlock<Block> SENSEGRASS_RETRACT;
 	public static final DeferredBlock<Block> COCONUT_SPROUT;
+	public static final DeferredBlock<Block> PALM_LOG;
+	public static final DeferredBlock<Block> PALM_WOOD;
+	public static final DeferredBlock<Block> STRIPPED_PALM_LOG;
+	public static final DeferredBlock<Block> STRIPPED_PALM_WOOD;
+	public static final DeferredBlock<Block> PALM_PLANKS;
+	public static final DeferredBlock<Block> PALM_LEAVES;
+	public static final DeferredBlock<Block> PALM_STAIRS;
+	public static final DeferredBlock<Block> PALM_SLAB;
+	public static final DeferredBlock<Block> PALM_FENCE;
+	public static final DeferredBlock<Block> PALM_FENCE_GATE;
+	public static final DeferredBlock<Block> PALM_DOOR;
+	public static final DeferredBlock<Block> PALM_TRAPDOOR;
+	public static final DeferredBlock<Block> PALM_PRESSURE_PLATE;
+	public static final DeferredBlock<Block> PALM_BUTTON;
+	public static final DeferredBlock<Block> PALM_SIGN;
+	public static final DeferredBlock<Block> PALM_WALL_SIGN;
+	public static final DeferredBlock<Block> PALM_HANGING_SIGN;
+	public static final DeferredBlock<Block> PALM_WALL_HANGING_SIGN;
 	static {
 		RADONITE_ORE = register("radonite_ore", RadoniteOreBlock::new);
 		RADONITE_BLOCK = register("radonite_block", RadoniteBlockBlock::new);
@@ -74,6 +92,24 @@ public class StrawberrymcModBlocks {
 		SENSEGRASS_MID = register("sensegrass_mid", SensegrassMidBlock::new);
 		SENSEGRASS_RETRACT = register("sensegrass_retract", SensegrassRetractBlock::new);
 		COCONUT_SPROUT = register("coconut_sprout", CoconutSproutBlock::new);
+		PALM_LOG = register("palm_log", PalmLogBlock::new);
+		PALM_WOOD = register("palm_wood", PalmWoodBlock::new);
+		STRIPPED_PALM_LOG = register("stripped_palm_log", StrippedPalmLogBlock::new);
+		STRIPPED_PALM_WOOD = register("stripped_palm_wood", StrippedPalmWoodBlock::new);
+		PALM_PLANKS = register("palm_planks", PalmPlanksBlock::new);
+		PALM_LEAVES = register("palm_leaves", PalmLeavesBlock::new);
+		PALM_STAIRS = register("palm_stairs", PalmStairsBlock::new);
+		PALM_SLAB = register("palm_slab", PalmSlabBlock::new);
+		PALM_FENCE = register("palm_fence", PalmFenceBlock::new);
+		PALM_FENCE_GATE = register("palm_fence_gate", PalmFenceGateBlock::new);
+		PALM_DOOR = register("palm_door", PalmDoorBlock::new);
+		PALM_TRAPDOOR = register("palm_trapdoor", PalmTrapdoorBlock::new);
+		PALM_PRESSURE_PLATE = register("palm_pressure_plate", PalmPressurePlateBlock::new);
+		PALM_BUTTON = register("palm_button", PalmButtonBlock::new);
+		PALM_SIGN = register("palm_sign", PalmSignBlock::new);
+		PALM_WALL_SIGN = register("palm_wall_sign", PalmWallSignBlock::new);
+		PALM_HANGING_SIGN = register("palm_hanging_sign", PalmHangingSignBlock::new);
+		PALM_WALL_HANGING_SIGN = register("palm_wall_hanging_sign", PalmWallHangingSignBlock::new);
 	}
 
 	// Start of user code block custom blocks
@@ -93,6 +129,8 @@ public class StrawberrymcModBlocks {
 		public static void clientSetup(FMLClientSetupEvent event) {
 			Sheets.addWoodType(StrawberrymcModWoodTypes.ECHOWOOD_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(StrawberrymcModWoodTypes.ECHOWOOD_HANGING_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(StrawberrymcModWoodTypes.PALM_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(StrawberrymcModWoodTypes.PALM_HANGING_SIGN_WOOD_TYPE);
 		}
 	}
 
@@ -100,5 +138,7 @@ public class StrawberrymcModBlocks {
 	public static void registerSigns(BlockEntityTypeAddBlocksEvent event) {
 		event.modify(BlockEntityType.SIGN, ECHOWOOD_SIGN.get(), ECHOWOOD_WALL_SIGN.get());
 		event.modify(BlockEntityType.HANGING_SIGN, ECHOWOOD_HANGING_SIGN.get(), ECHOWOOD_WALL_HANGING_SIGN.get());
+		event.modify(BlockEntityType.SIGN, PALM_SIGN.get(), PALM_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, PALM_HANGING_SIGN.get(), PALM_WALL_HANGING_SIGN.get());
 	}
 }

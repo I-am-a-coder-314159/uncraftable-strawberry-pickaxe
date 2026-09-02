@@ -122,6 +122,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": "SensegrassTick",
+    "onTickUpdate": "SensegrassTick",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

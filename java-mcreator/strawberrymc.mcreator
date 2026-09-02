@@ -352,7 +352,6 @@
       }
     },
     {
-<<<<<<< HEAD
       "name": "EchowoodLog",
       "type": "block",
       "compiles": true,
@@ -1088,17 +1087,609 @@
       "metadata": {
         "files": [
           "src/main/java/com/nobigcorps/strawberrymc/entity/CoconutEntity.java"
-=======
-      "name": "FletchingTableGUI",
-      "type": "gui",
+        ]
+      }
+    },
+    {
+      "name": "PalmLog",
+      "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fletching_table_gui",
+      "registry_name": "palm_log",
       "metadata": {
         "files": [
-          "src/main/java/com/nobigcorps/strawberrymc/client/gui/FletchingTableGUIScreen.java",
-          "src/main/java/com/nobigcorps/strawberrymc/world/inventory/FletchingTableGUIMenu.java"
->>>>>>> e7b77425e3f31239c4796de2681f2b0c67b808eb
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmLogBlock.java",
+          "src/main/resources/assets/strawberrymc/items/palm_log.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_log.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_log.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_log.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_log.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/palm_wood.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_wood.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_wood.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmWoodBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/palm_wood.json",
+          "src/main/resources/assets/strawberrymc/items/palm_wood.json"
+        ]
+      }
+    },
+    {
+      "name": "StrippedPalmLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_palm_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/stripped_palm_log.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/stripped_palm_log.json",
+          "src/main/resources/assets/strawberrymc/items/stripped_palm_log.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/StrippedPalmLogBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/stripped_palm_log.json",
+          "src/main/resources/assets/strawberrymc/models/item/stripped_palm_log.json"
+        ]
+      }
+    },
+    {
+      "name": "StrippedPalmWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_palm_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/stripped_palm_wood.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/StrippedPalmWoodBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/stripped_palm_wood.json",
+          "src/main/resources/assets/strawberrymc/items/stripped_palm_wood.json",
+          "src/main/resources/assets/strawberrymc/models/block/stripped_palm_wood.json",
+          "src/main/resources/assets/strawberrymc/models/item/stripped_palm_wood.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmPlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/palm_planks.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_planks.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_planks.json",
+          "src/main/resources/assets/strawberrymc/items/palm_planks.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_planks.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmPlanksBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "PalmLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmLeavesBlock.java",
+          "src/main/resources/assets/strawberrymc/items/palm_leaves.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_leaves.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_leaves.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_leaves.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/palm_stairs.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_stairs.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_stairs.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_stairs.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmStairsBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/palm_stairs_outer.json",
+          "src/main/resources/assets/strawberrymc/items/palm_stairs.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_stairs_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/palm_slab.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_slab.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmSlabBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_slab.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_slab.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_slab_top.json",
+          "src/main/resources/assets/strawberrymc/items/palm_slab.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_slab_full.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_fence",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmFenceBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/palm_fence_inventory.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_fence.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_fence_post.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_fence.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_fence.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_fence.json",
+          "src/main/resources/assets/strawberrymc/items/palm_fence.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/palm_fence_gate_wall_open.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmFenceGateBlock.java",
+          "src/main/resources/assets/strawberrymc/models/block/palm_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/items/palm_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_fence_gate_wall.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_fence_gate.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_fence_gate_open.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_fence_gate.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/palm_door_bottom_right_open.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_door_bottom_right.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_door_top_right_open.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_door.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmDoorBlock.java",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_door.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_door.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_door_bottom_left.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_door_top_left_open.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_door_top_left.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_door_top_right.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_door_bottom_left_open.json",
+          "src/main/resources/assets/strawberrymc/items/palm_door.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmTrapdoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/palm_trapdoor_top.json",
+          "src/main/resources/assets/strawberrymc/items/palm_trapdoor.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_trapdoor_open.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_trapdoor.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_trapdoor.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmTrapdoorBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/palm_trapdoor.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_trapdoor.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmPressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/block/palm_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/items/palm_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_pressure_plate_down.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmPressurePlateBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_pressure_plate.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_pressure_plate.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_pressure_plate.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/palm_button.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_button.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_button_pressed.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_button_inventory.json",
+          "src/main/resources/assets/strawberrymc/models/item/palm_button.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_button.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_button.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmButtonBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "PalmSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmSignBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_wall_sign.json",
+          "src/main/resources/assets/strawberrymc/items/palm_sign.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmWallSignBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/palm_sign.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_sign.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_sign.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_sign.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmHangingSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_hanging_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/palm_hanging_sign.json",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_hanging_sign.json",
+          "src/main/resources/assets/strawberrymc/models/block/palm_hanging_sign.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmHangingSignBlock.java",
+          "src/main/java/com/nobigcorps/strawberrymc/block/PalmWallHangingSignBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/palm_wall_hanging_sign.json",
+          "src/main/resources/assets/strawberrymc/items/palm_hanging_sign.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/palm_hanging_sign.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmBoat",
+      "type": "specialentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_boat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/palm_boat.json",
+          "src/main/java/com/nobigcorps/strawberrymc/entity/PalmBoatEntity.java",
+          "src/main/resources/assets/strawberrymc/models/item/palm_boat.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmChestBoat",
+      "type": "specialentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_chest_boat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/palm_chest_boat.json",
+          "src/main/resources/assets/strawberrymc/items/palm_chest_boat.json",
+          "src/main/java/com/nobigcorps/strawberrymc/entity/PalmChestBoatEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PalmLeavesComposting",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_leaves_composting",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PalmWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/palm_wood_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StrippedPalmWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_palm_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/stripped_palm_wood_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/stripped_palm_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmPlanksRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_planks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/palm_planks_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_planks_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_stairs_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/palm_stairs_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_slab_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/palm_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_fence_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/palm_fence_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_fence_gate_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/palm_fence_gate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmDoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_door_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/palm_door_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmTrapdoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/palm_trapdoor_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_trapdoor_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_pressure_plate_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/palm_pressure_plate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/palm_button_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_button_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_sign_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/palm_sign_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmHangingSignRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_hanging_sign_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/palm_hanging_sign_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_hanging_sign_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmBoatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_boat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_boat_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/palm_boat_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PalmChestBoatRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_chest_boat_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/palm_chest_boat_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/palm_chest_boat_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Dustcloud",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dustcloud",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/particles/dustcloud.json",
+          "src/main/java/com/nobigcorps/strawberrymc/client/particle/DustcloudParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "DustcloudGeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dustcloud_generation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/DustcloudGenerationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SensegrassTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sensegrass_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/SensegrassTickProcedure.java"
         ]
       }
     }
@@ -1523,8 +2114,24 @@
       "Blocks.MUD_BRICK_WALL",
       "Blocks.BLUE_ICE"
     ],
-<<<<<<< HEAD
     "BLOCKS:minecraft:mineable/axe": [
+      "~PalmTrapdoor@CUSTOM:PalmTrapdoor",
+      "~PalmWood@CUSTOM:PalmWood",
+      "~PalmLog@CUSTOM:PalmLog",
+      "~PalmFenceGate@CUSTOM:PalmFenceGate",
+      "~PalmFence@CUSTOM:PalmFence",
+      "~PalmSlab@CUSTOM:PalmSlab",
+      "~PalmStairs@CUSTOM:PalmStairs",
+      "~PalmPlanks@CUSTOM:PalmPlanks",
+      "~StrippedPalmWood@CUSTOM:StrippedPalmWood",
+      "~StrippedPalmLog@CUSTOM:StrippedPalmLog",
+      "~PalmHangingSign@CUSTOM:PalmHangingSign.wall",
+      "~PalmHangingSign@CUSTOM:PalmHangingSign",
+      "~PalmSign@CUSTOM:PalmSign.wall",
+      "~PalmSign@CUSTOM:PalmSign",
+      "~PalmButton@CUSTOM:PalmButton",
+      "~PalmPressurePlate@CUSTOM:PalmPressurePlate",
+      "~PalmDoor@CUSTOM:PalmDoor",
       "~EchowoodLog@CUSTOM:EchowoodLog",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign.wall",
@@ -1550,10 +2157,12 @@
       "CUSTOM:StrippedEchowoodWood"
     ],
     "BLOCKS:minecraft:logs_that_burn": [
-      "TAG:mod:echowood_logs"
+      "TAG:mod:echowood_logs",
+      "TAG:mod:palm_logs"
     ],
     "BLOCKS:minecraft:planks": [
-      "CUSTOM:EchowoodPlanks"
+      "CUSTOM:EchowoodPlanks",
+      "CUSTOM:PalmPlanks"
     ],
     "ITEMS:mod:echowood_logs": [
       "CUSTOM:EchowoodLog",
@@ -1562,71 +2171,99 @@
       "CUSTOM:StrippedEchowoodWood"
     ],
     "ITEMS:minecraft:logs_that_burn": [
-      "TAG:mod:echowood_logs"
+      "TAG:mod:echowood_logs",
+      "TAG:mod:palm_logs"
     ],
     "ITEMS:minecraft:planks": [
-      "CUSTOM:EchowoodPlanks"
+      "CUSTOM:EchowoodPlanks",
+      "CUSTOM:PalmPlanks"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~SensegrassRetract@CUSTOM:SensegrassRetract",
       "~SensegrassMid@CUSTOM:SensegrassMid",
       "~SensegrassExt@CUSTOM:SensegrassExt",
+      "~PalmLeaves@CUSTOM:PalmLeaves",
       "~EchowoodLeaves@CUSTOM:EchowoodLeaves"
     ],
     "BLOCKS:minecraft:leaves": [
+      "~PalmLeaves@CUSTOM:PalmLeaves",
       "~EchowoodLeaves@CUSTOM:EchowoodLeaves"
     ],
     "BLOCKS:minecraft:stairs": [
+      "~PalmStairs@CUSTOM:PalmStairs",
       "~EchowoodStairs@CUSTOM:EchowoodStairs"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~PalmSlab@CUSTOM:PalmSlab",
       "~EchowoodSlab@CUSTOM:EchowoodSlab"
     ],
     "BLOCKS:minecraft:wooden_fences": [
+      "~PalmFence@CUSTOM:PalmFence",
       "~EchowoodFence@CUSTOM:EchowoodFence"
     ],
     "BLOCKS:minecraft:wooden_doors": [
+      "~PalmDoor@CUSTOM:PalmDoor",
       "~EchowoodDoor@CUSTOM:EchowoodDoor"
     ],
     "BLOCKS:minecraft:wooden_trapdoors": [
+      "~PalmTrapdoor@CUSTOM:PalmTrapdoor",
       "~EchowoodTrapdoor@CUSTOM:EchowoodTrapdoor"
     ],
     "BLOCKS:minecraft:wooden_pressure_plates": [
+      "~PalmPressurePlate@CUSTOM:PalmPressurePlate",
       "~EchowoodPressurePlate@CUSTOM:EchowoodPressurePlate"
     ],
     "BLOCKS:minecraft:wooden_buttons": [
+      "~PalmButton@CUSTOM:PalmButton",
       "~EchowoodButton@CUSTOM:EchowoodButton"
     ],
     "BLOCKS:minecraft:standing_signs": [
+      "~PalmSign@CUSTOM:PalmSign",
       "~EchowoodSign@CUSTOM:EchowoodSign"
     ],
     "BLOCKS:minecraft:wall_signs": [
+      "~PalmSign@CUSTOM:PalmSign.wall",
       "~EchowoodSign@CUSTOM:EchowoodSign.wall"
     ],
     "BLOCKS:minecraft:ceiling_hanging_signs": [
+      "~PalmHangingSign@CUSTOM:PalmHangingSign",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign"
     ],
     "BLOCKS:minecraft:wall_hanging_signs": [
+      "~PalmHangingSign@CUSTOM:PalmHangingSign.wall",
       "~EchowoodHangingSign@CUSTOM:EchowoodHangingSign.wall"
     ],
     "ENTITIES:minecraft:boat": [
+      "~PalmBoat@CUSTOM:PalmBoat",
       "~EchowoodBoat@CUSTOM:EchowoodBoat"
     ],
     "ITEMS:minecraft:boats": [
+      "~PalmBoat@CUSTOM:PalmBoat",
       "~EchowoodBoat@CUSTOM:EchowoodBoat"
     ],
     "ENTITIES:c:boats": [
+      "~PalmChestBoat@CUSTOM:PalmChestBoat",
       "~EchowoodChestBoat@CUSTOM:EchowoodChestBoat"
     ],
     "ITEMS:minecraft:chest_boats": [
+      "~PalmChestBoat@CUSTOM:PalmChestBoat",
       "~EchowoodChestBoat@CUSTOM:EchowoodChestBoat"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~CoconutSprout@CUSTOM:CoconutSprout"
+    ],
+    "BLOCKS:mod:palm_logs": [
+      "CUSTOM:PalmLog",
+      "CUSTOM:PalmWood",
+      "CUSTOM:StrippedPalmLog",
+      "CUSTOM:StrippedPalmWood"
+    ],
+    "ITEMS:mod:palm_logs": [
+      "CUSTOM:PalmLog",
+      "CUSTOM:PalmWood",
+      "CUSTOM:StrippedPalmLog",
+      "CUSTOM:StrippedPalmWood"
     ]
-=======
-    "ITEMS:strawberrymc:valid_arrow_tips": []
->>>>>>> e7b77425e3f31239c4796de2681f2b0c67b808eb
   },
   "tab_element_order": {},
   "language_map": {
@@ -1669,7 +2306,6 @@
       "item.strawberrymc.metal_block": "Block of Metal",
       "death.attack.radiation": "%1$s died of radiation",
       "death.attack.radiation.player": "%1$s died whilst trying to escape the radiation of %2$s",
-<<<<<<< HEAD
       "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s (§kTheEnd§r)",
       "attribute.strawberrymc.radiation_tolerance": "Radiation Tolerance",
       "item.strawberrymc.echowood_log": "Echowood Log",
@@ -1700,23 +2336,15 @@
       "death.attack.coconut_impact": "%1$s died",
       "item.strawberrymc.coconut_sprout": "Coconut Sprout",
       "item.strawberrymc.raw_coconut": "Raw Coconut"
-=======
-      "death.attack.radiation.item": "%1$s was killed by %2$s using an irradiated %3$s",
-      "attribute.strawberrymc.radiation_tolerance": "Radiation Tolerance"
->>>>>>> e7b77425e3f31239c4796de2681f2b0c67b808eb
     }
   },
   "metadata": {
     "files": [
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModAttributes.java",
-<<<<<<< HEAD
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModWoodTypes.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
-=======
-      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModMenus.java",
-      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModScreens.java",
-      "src/main/java/com/nobigcorps/strawberrymc/network/MenuStateUpdateMessage.java",
->>>>>>> e7b77425e3f31239c4796de2681f2b0c67b808eb
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModParticles.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModParticleTypes.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModEntities.java",

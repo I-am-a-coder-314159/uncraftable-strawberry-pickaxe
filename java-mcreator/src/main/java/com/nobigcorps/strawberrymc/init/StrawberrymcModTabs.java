@@ -42,6 +42,19 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_TRAPDOOR.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_PRESSURE_PLATE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_BUTTON.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_LOG.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_WOOD.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.STRIPPED_PALM_LOG.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.STRIPPED_PALM_WOOD.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_PLANKS.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_STAIRS.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_SLAB.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_FENCE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_FENCE_GATE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_DOOR.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_TRAPDOOR.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_PRESSURE_PLATE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_BUTTON.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(StrawberrymcModItems.RADONITE_PICKAXE.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_AXE.get());
@@ -49,6 +62,8 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_HOE.get());
 			tabData.accept(StrawberrymcModItems.ECHOWOOD_BOAT.get());
 			tabData.accept(StrawberrymcModItems.ECHOWOOD_CHEST_BOAT.get());
+			tabData.accept(StrawberrymcModItems.PALM_BOAT.get());
+			tabData.accept(StrawberrymcModItems.PALM_CHEST_BOAT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(StrawberrymcModItems.RADONITE_SWORD.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_HELMET.get());
@@ -63,9 +78,12 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_RETRACT.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.COCONUT_SPROUT.get().asItem());
 			tabData.accept(StrawberrymcModItems.RAW_COCONUT.get());
+			tabData.accept(StrawberrymcModBlocks.PALM_LEAVES.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_SIGN.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.PALM_HANGING_SIGN.get().asItem());
 		}
 	}
 }
