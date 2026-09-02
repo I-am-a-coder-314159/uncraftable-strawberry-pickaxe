@@ -880,6 +880,87 @@
           "src/main/resources/data/strawberrymc/advancement/recipes/echowood_chest_boat_recipe.json"
         ]
       }
+    },
+    {
+      "name": "SensegrassExt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sensegrass_ext",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/sensegrass_ext.json",
+          "src/main/resources/assets/strawberrymc/models/block/sensegrass_ext.json",
+          "src/main/resources/assets/strawberrymc/blockstates/sensegrass_ext.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/SensegrassExtBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/sensegrass_ext.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/sensegrass_ext.json"
+        ]
+      }
+    },
+    {
+      "name": "SensegrassMid",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sensegrass_mid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/sensegrass_mid.json",
+          "src/main/resources/assets/strawberrymc/models/item/sensegrass_mid.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/sensegrass_mid.json",
+          "src/main/resources/assets/strawberrymc/models/block/sensegrass_mid.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/SensegrassMidBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/sensegrass_mid.json"
+        ]
+      }
+    },
+    {
+      "name": "SensegrassRetract",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sensegrass_retract",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/sensegrass_retract.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/SensegrassRetractBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/sensegrass_retract.json",
+          "src/main/resources/assets/strawberrymc/models/block/sensegrass_retract.json",
+          "src/main/resources/assets/strawberrymc/blockstates/sensegrass_retract.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/sensegrass_retract.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/CoconutProjectileHitsBlockProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1346,6 +1427,9 @@
       "CUSTOM:EchowoodPlanks"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
+      "~SensegrassRetract@CUSTOM:SensegrassRetract",
+      "~SensegrassMid@CUSTOM:SensegrassMid",
+      "~SensegrassExt@CUSTOM:SensegrassExt",
       "~EchowoodLeaves@CUSTOM:EchowoodLeaves"
     ],
     "BLOCKS:minecraft:leaves": [
@@ -1459,7 +1543,10 @@
       "item.strawberrymc.echowood_boat": "Echowood Boat",
       "entity.strawberrymc.echowood_boat": "Echowood Boat",
       "entity.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest",
-      "item.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest"
+      "item.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest",
+      "item.strawberrymc.sensegrass_ext": "Sensegrass Ext",
+      "item.strawberrymc.sensegrass_mid": "Sensegrass Ext",
+      "item.strawberrymc.sensegrass_retract": "Sensegrass Ext"
     }
   },
   "metadata": {

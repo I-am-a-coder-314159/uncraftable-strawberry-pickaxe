@@ -22,6 +22,9 @@ public class StrawberrymcModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(StrawberrymcModItems.RADONITE_INGOT.get());
+			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_EXT.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_MID.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_RETRACT.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.RADONITE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.RADONITE_BLOCK.get().asItem());
@@ -53,6 +56,9 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RADONITE_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LEAVES.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_EXT.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_MID.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_RETRACT.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());

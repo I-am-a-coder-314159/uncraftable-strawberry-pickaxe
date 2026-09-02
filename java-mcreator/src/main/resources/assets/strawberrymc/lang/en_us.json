@@ -58,5 +58,8 @@
   "item.strawberrymc.echowood_boat": "Echowood Boat",
   "entity.strawberrymc.echowood_boat": "Echowood Boat",
   "entity.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest",
-  "item.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest"
+  "item.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest",
+  "item.strawberrymc.sensegrass_ext": "Sensegrass Ext",
+  "item.strawberrymc.sensegrass_mid": "Sensegrass Ext",
+  "item.strawberrymc.sensegrass_retract": "Sensegrass Ext"
 }

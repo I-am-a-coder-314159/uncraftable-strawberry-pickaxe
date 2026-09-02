@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "strawberrymc:echowood_leaves"
+    "strawberrymc:echowood_leaves",
+    "strawberrymc:sensegrass_mid",
+    "strawberrymc:sensegrass_ext",
+    "strawberrymc:sensegrass_retract"
   ]
 }

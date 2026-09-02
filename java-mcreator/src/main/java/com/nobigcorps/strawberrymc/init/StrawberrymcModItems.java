@@ -47,6 +47,9 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> ECHOWOOD_HANGING_SIGN;
 	public static final DeferredItem<Item> ECHOWOOD_BOAT;
 	public static final DeferredItem<Item> ECHOWOOD_CHEST_BOAT;
+	public static final DeferredItem<Item> SENSEGRASS_EXT;
+	public static final DeferredItem<Item> SENSEGRASS_MID;
+	public static final DeferredItem<Item> SENSEGRASS_RETRACT;
 	static {
 		RADONITE_INGOT = register("radonite_ingot", RadoniteIngotItem::new);
 		RADONITE_ORE = block(StrawberrymcModBlocks.RADONITE_ORE);
@@ -78,6 +81,9 @@ public class StrawberrymcModItems {
 		ECHOWOOD_HANGING_SIGN = hangingSignBlock(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN, StrawberrymcModBlocks.ECHOWOOD_WALL_HANGING_SIGN, new Item.Properties().stacksTo(16));
 		ECHOWOOD_BOAT = register("echowood_boat", properties -> new BoatItem(StrawberrymcModEntities.ECHOWOOD_BOAT.get(), properties.stacksTo(1)));
 		ECHOWOOD_CHEST_BOAT = register("echowood_chest_boat", properties -> new BoatItem(StrawberrymcModEntities.ECHOWOOD_CHEST_BOAT.get(), properties.stacksTo(1)));
+		SENSEGRASS_EXT = block(StrawberrymcModBlocks.SENSEGRASS_EXT);
+		SENSEGRASS_MID = block(StrawberrymcModBlocks.SENSEGRASS_MID);
+		SENSEGRASS_RETRACT = block(StrawberrymcModBlocks.SENSEGRASS_RETRACT);
 	}
 
 	// Start of user code block custom items

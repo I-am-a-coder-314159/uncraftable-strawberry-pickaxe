@@ -44,6 +44,9 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> ECHOWOOD_WALL_SIGN;
 	public static final DeferredBlock<Block> ECHOWOOD_HANGING_SIGN;
 	public static final DeferredBlock<Block> ECHOWOOD_WALL_HANGING_SIGN;
+	public static final DeferredBlock<Block> SENSEGRASS_EXT;
+	public static final DeferredBlock<Block> SENSEGRASS_MID;
+	public static final DeferredBlock<Block> SENSEGRASS_RETRACT;
 	static {
 		RADONITE_ORE = register("radonite_ore", RadoniteOreBlock::new);
 		RADONITE_BLOCK = register("radonite_block", RadoniteBlockBlock::new);
@@ -65,6 +68,9 @@ public class StrawberrymcModBlocks {
 		ECHOWOOD_WALL_SIGN = register("echowood_wall_sign", EchowoodWallSignBlock::new);
 		ECHOWOOD_HANGING_SIGN = register("echowood_hanging_sign", EchowoodHangingSignBlock::new);
 		ECHOWOOD_WALL_HANGING_SIGN = register("echowood_wall_hanging_sign", EchowoodWallHangingSignBlock::new);
+		SENSEGRASS_EXT = register("sensegrass_ext", SensegrassExtBlock::new);
+		SENSEGRASS_MID = register("sensegrass_mid", SensegrassMidBlock::new);
+		SENSEGRASS_RETRACT = register("sensegrass_retract", SensegrassRetractBlock::new);
 	}
 
 	// Start of user code block custom blocks
