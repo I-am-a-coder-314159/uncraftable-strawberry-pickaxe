@@ -961,6 +961,134 @@
           "src/main/java/com/nobigcorps/strawberrymc/procedures/CoconutProjectileHitsBlockProcedure.java"
         ]
       }
+    },
+    {
+      "name": "CoconutImpact",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_impact",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/damage_type/coconut_impact.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_grow",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/CoconutGrowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutSproutTrample",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_sprout_trample",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/CoconutSproutTrampleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutSprout",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_sprout",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/coconut_sprout.json",
+          "src/main/resources/assets/strawberrymc/models/item/coconut_sprout.json",
+          "src/main/resources/assets/strawberrymc/models/block/coconut_sprout.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/CoconutSproutBlock.java",
+          "src/main/resources/assets/strawberrymc/items/coconut_sprout.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/coconut_sprout.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutPlant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/CoconutPlantProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RawCoconut",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_coconut",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/RawCoconutItem.java",
+          "src/main/resources/assets/strawberrymc/items/raw_coconut.json",
+          "src/main/resources/assets/strawberrymc/models/item/raw_coconut.json"
+        ]
+      }
+    },
+    {
+      "name": "Coconut",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/entity/CoconutEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1479,6 +1607,9 @@
     ],
     "ITEMS:minecraft:chest_boats": [
       "~EchowoodChestBoat@CUSTOM:EchowoodChestBoat"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CoconutSprout@CUSTOM:CoconutSprout"
     ]
   },
   "tab_element_order": {},
@@ -1546,7 +1677,12 @@
       "item.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest",
       "item.strawberrymc.sensegrass_ext": "Sensegrass Ext",
       "item.strawberrymc.sensegrass_mid": "Sensegrass Ext",
-      "item.strawberrymc.sensegrass_retract": "Sensegrass Ext"
+      "item.strawberrymc.sensegrass_retract": "Sensegrass Ext",
+      "death.attack.coconut_impact.item": "%1$s got hit by a %3$s too hard",
+      "death.attack.coconut_impact.player": "%1$s got hit by a \u003citem\u003e whilst trying to escape %2$s",
+      "death.attack.coconut_impact": "%1$s died",
+      "item.strawberrymc.coconut_sprout": "Coconut Sprout",
+      "item.strawberrymc.raw_coconut": "Raw Coconut"
     }
   },
   "metadata": {

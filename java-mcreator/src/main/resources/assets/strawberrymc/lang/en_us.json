@@ -61,5 +61,10 @@
   "item.strawberrymc.echowood_chest_boat": "Echowood Boat with Chest",
   "item.strawberrymc.sensegrass_ext": "Sensegrass Ext",
   "item.strawberrymc.sensegrass_mid": "Sensegrass Ext",
-  "item.strawberrymc.sensegrass_retract": "Sensegrass Ext"
+  "item.strawberrymc.sensegrass_retract": "Sensegrass Ext",
+  "death.attack.coconut_impact.item": "%1$s got hit by a %3$s too hard",
+  "death.attack.coconut_impact.player": "%1$s got hit by a <item> whilst trying to escape %2$s",
+  "death.attack.coconut_impact": "%1$s died",
+  "item.strawberrymc.coconut_sprout": "Coconut Sprout",
+  "item.strawberrymc.raw_coconut": "Raw Coconut"
 }

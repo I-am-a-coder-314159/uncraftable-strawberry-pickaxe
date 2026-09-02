@@ -23,6 +23,8 @@ public class StrawberrymcModEntities {
 			EntityType.Builder.<EchowoodBoatEntity>of(EchowoodBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 	public static final DeferredHolder<EntityType<?>, EntityType<EchowoodChestBoatEntity>> ECHOWOOD_CHEST_BOAT = register("echowood_chest_boat",
 			EntityType.Builder.<EchowoodChestBoatEntity>of(EchowoodChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
+	public static final DeferredHolder<EntityType<?>, EntityType<CoconutEntity>> COCONUT = register("coconut",
+			EntityType.Builder.<CoconutEntity>of(CoconutEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

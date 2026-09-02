@@ -50,6 +50,8 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> SENSEGRASS_EXT;
 	public static final DeferredItem<Item> SENSEGRASS_MID;
 	public static final DeferredItem<Item> SENSEGRASS_RETRACT;
+	public static final DeferredItem<Item> COCONUT_SPROUT;
+	public static final DeferredItem<Item> RAW_COCONUT;
 	static {
 		RADONITE_INGOT = register("radonite_ingot", RadoniteIngotItem::new);
 		RADONITE_ORE = block(StrawberrymcModBlocks.RADONITE_ORE);
@@ -84,6 +86,8 @@ public class StrawberrymcModItems {
 		SENSEGRASS_EXT = block(StrawberrymcModBlocks.SENSEGRASS_EXT);
 		SENSEGRASS_MID = block(StrawberrymcModBlocks.SENSEGRASS_MID);
 		SENSEGRASS_RETRACT = block(StrawberrymcModBlocks.SENSEGRASS_RETRACT);
+		COCONUT_SPROUT = block(StrawberrymcModBlocks.COCONUT_SPROUT);
+		RAW_COCONUT = register("raw_coconut", RawCoconutItem::new);
 	}
 
 	// Start of user code block custom items

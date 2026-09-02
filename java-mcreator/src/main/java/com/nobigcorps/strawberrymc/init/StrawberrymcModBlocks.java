@@ -6,6 +6,7 @@ package com.nobigcorps.strawberrymc.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -47,6 +48,7 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> SENSEGRASS_EXT;
 	public static final DeferredBlock<Block> SENSEGRASS_MID;
 	public static final DeferredBlock<Block> SENSEGRASS_RETRACT;
+	public static final DeferredBlock<Block> COCONUT_SPROUT;
 	static {
 		RADONITE_ORE = register("radonite_ore", RadoniteOreBlock::new);
 		RADONITE_BLOCK = register("radonite_block", RadoniteBlockBlock::new);
@@ -71,6 +73,7 @@ public class StrawberrymcModBlocks {
 		SENSEGRASS_EXT = register("sensegrass_ext", SensegrassExtBlock::new);
 		SENSEGRASS_MID = register("sensegrass_mid", SensegrassMidBlock::new);
 		SENSEGRASS_RETRACT = register("sensegrass_retract", SensegrassRetractBlock::new);
+		COCONUT_SPROUT = register("coconut_sprout", CoconutSproutBlock::new);
 	}
 
 	// Start of user code block custom blocks
@@ -81,6 +84,11 @@ public class StrawberrymcModBlocks {
 
 	@EventBusSubscriber(Dist.CLIENT)
 	public static class BlocksClientSideHandler {
+		@SubscribeEvent
+		public static void blockColorLoad(RegisterColorHandlersEvent.BlockTintSources event) {
+			CoconutSproutBlock.blockColorLoad(event);
+		}
+
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
 			Sheets.addWoodType(StrawberrymcModWoodTypes.ECHOWOOD_SIGN_WOOD_TYPE);
