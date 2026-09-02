@@ -8,8 +8,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.*;
 
 import java.util.function.Function;
 
@@ -30,6 +29,29 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> RADONITE_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> RADONITE_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> RADONITE_ARMOR_BOOTS;
+	public static final DeferredItem<Item> ECHOWOOD_LOG;
+	public static final DeferredItem<Item> ECHOWOOD_WOOD;
+	public static final DeferredItem<Item> STRIPPED_ECHOWOOD_LOG;
+	public static final DeferredItem<Item> STRIPPED_ECHOWOOD_WOOD;
+	public static final DeferredItem<Item> ECHOWOOD_PLANKS;
+	public static final DeferredItem<Item> ECHOWOOD_LEAVES;
+	public static final DeferredItem<Item> ECHOWOOD_STAIRS;
+	public static final DeferredItem<Item> ECHOWOOD_SLAB;
+	public static final DeferredItem<Item> ECHOWOOD_FENCE;
+	public static final DeferredItem<Item> ECHOWOOD_FENCE_GATE;
+	public static final DeferredItem<Item> ECHOWOOD_DOOR;
+	public static final DeferredItem<Item> ECHOWOOD_TRAPDOOR;
+	public static final DeferredItem<Item> ECHOWOOD_PRESSURE_PLATE;
+	public static final DeferredItem<Item> ECHOWOOD_BUTTON;
+	public static final DeferredItem<Item> ECHOWOOD_SIGN;
+	public static final DeferredItem<Item> ECHOWOOD_HANGING_SIGN;
+	public static final DeferredItem<Item> ECHOWOOD_BOAT;
+	public static final DeferredItem<Item> ECHOWOOD_CHEST_BOAT;
+	public static final DeferredItem<Item> SENSEGRASS_EXT;
+	public static final DeferredItem<Item> SENSEGRASS_MID;
+	public static final DeferredItem<Item> SENSEGRASS_RETRACT;
+	public static final DeferredItem<Item> COCONUT_SPROUT;
+	public static final DeferredItem<Item> RAW_COCONUT;
 	static {
 		RADONITE_INGOT = register("radonite_ingot", RadoniteIngotItem::new);
 		RADONITE_ORE = block(StrawberrymcModBlocks.RADONITE_ORE);
@@ -43,6 +65,29 @@ public class StrawberrymcModItems {
 		RADONITE_ARMOR_CHESTPLATE = register("radonite_armor_chestplate", RadoniteArmorItem.Chestplate::new);
 		RADONITE_ARMOR_LEGGINGS = register("radonite_armor_leggings", RadoniteArmorItem.Leggings::new);
 		RADONITE_ARMOR_BOOTS = register("radonite_armor_boots", RadoniteArmorItem.Boots::new);
+		ECHOWOOD_LOG = block(StrawberrymcModBlocks.ECHOWOOD_LOG);
+		ECHOWOOD_WOOD = block(StrawberrymcModBlocks.ECHOWOOD_WOOD);
+		STRIPPED_ECHOWOOD_LOG = block(StrawberrymcModBlocks.STRIPPED_ECHOWOOD_LOG);
+		STRIPPED_ECHOWOOD_WOOD = block(StrawberrymcModBlocks.STRIPPED_ECHOWOOD_WOOD);
+		ECHOWOOD_PLANKS = block(StrawberrymcModBlocks.ECHOWOOD_PLANKS);
+		ECHOWOOD_LEAVES = block(StrawberrymcModBlocks.ECHOWOOD_LEAVES);
+		ECHOWOOD_STAIRS = block(StrawberrymcModBlocks.ECHOWOOD_STAIRS);
+		ECHOWOOD_SLAB = block(StrawberrymcModBlocks.ECHOWOOD_SLAB);
+		ECHOWOOD_FENCE = block(StrawberrymcModBlocks.ECHOWOOD_FENCE);
+		ECHOWOOD_FENCE_GATE = block(StrawberrymcModBlocks.ECHOWOOD_FENCE_GATE);
+		ECHOWOOD_DOOR = doubleBlock(StrawberrymcModBlocks.ECHOWOOD_DOOR);
+		ECHOWOOD_TRAPDOOR = block(StrawberrymcModBlocks.ECHOWOOD_TRAPDOOR);
+		ECHOWOOD_PRESSURE_PLATE = block(StrawberrymcModBlocks.ECHOWOOD_PRESSURE_PLATE);
+		ECHOWOOD_BUTTON = block(StrawberrymcModBlocks.ECHOWOOD_BUTTON);
+		ECHOWOOD_SIGN = signBlock(StrawberrymcModBlocks.ECHOWOOD_SIGN, StrawberrymcModBlocks.ECHOWOOD_WALL_SIGN, new Item.Properties().stacksTo(16));
+		ECHOWOOD_HANGING_SIGN = hangingSignBlock(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN, StrawberrymcModBlocks.ECHOWOOD_WALL_HANGING_SIGN, new Item.Properties().stacksTo(16));
+		ECHOWOOD_BOAT = register("echowood_boat", properties -> new BoatItem(StrawberrymcModEntities.ECHOWOOD_BOAT.get(), properties.stacksTo(1)));
+		ECHOWOOD_CHEST_BOAT = register("echowood_chest_boat", properties -> new BoatItem(StrawberrymcModEntities.ECHOWOOD_CHEST_BOAT.get(), properties.stacksTo(1)));
+		SENSEGRASS_EXT = block(StrawberrymcModBlocks.SENSEGRASS_EXT);
+		SENSEGRASS_MID = block(StrawberrymcModBlocks.SENSEGRASS_MID);
+		SENSEGRASS_RETRACT = block(StrawberrymcModBlocks.SENSEGRASS_RETRACT);
+		COCONUT_SPROUT = block(StrawberrymcModBlocks.COCONUT_SPROUT);
+		RAW_COCONUT = register("raw_coconut", RawCoconutItem::new);
 	}
 
 	// Start of user code block custom items
@@ -57,5 +102,29 @@ public class StrawberrymcModItems {
 
 	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
 		return REGISTRY.registerItem(block.getId().getPath(), prop -> new BlockItem(block.get(), prop), () -> properties);
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block) {
+		return doubleBlock(block, new Item.Properties());
+	}
+
+	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block, Item.Properties properties) {
+		return REGISTRY.registerItem(block.getId().getPath(), prop -> new DoubleHighBlockItem(block.get(), prop), () -> properties);
+	}
+
+	private static DeferredItem<Item> signBlock(DeferredHolder<Block, Block> block, DeferredHolder<Block, Block> wallBlock) {
+		return signBlock(block, wallBlock, new Item.Properties());
+	}
+
+	private static DeferredItem<Item> signBlock(DeferredHolder<Block, Block> block, DeferredHolder<Block, Block> wallBlock, Item.Properties properties) {
+		return REGISTRY.registerItem(block.getId().getPath(), prop -> new SignItem(block.get(), wallBlock.get(), prop), () -> properties);
+	}
+
+	private static DeferredItem<Item> hangingSignBlock(DeferredHolder<Block, Block> block, DeferredHolder<Block, Block> wallBlock) {
+		return hangingSignBlock(block, wallBlock, new Item.Properties());
+	}
+
+	private static DeferredItem<Item> hangingSignBlock(DeferredHolder<Block, Block> block, DeferredHolder<Block, Block> wallBlock, Item.Properties properties) {
+		return REGISTRY.registerItem(block.getId().getPath(), prop -> new HangingSignItem(block.get(), wallBlock.get(), prop), () -> properties);
 	}
 }

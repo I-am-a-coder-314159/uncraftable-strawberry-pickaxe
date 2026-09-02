@@ -2,9 +2,9 @@
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="java-mcreator"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.neoforged.devlaunch.Main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\clientRunProgramArgs.txt"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\bin\\main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\shash\Documents\Coding\nonmints\StrawberryMinecraft\uncraftable-strawberry-pickaxe\java-mcreator\run"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @/Users/ericx/uncraftable-strawberry-pickaxe-1/java-mcreator/build/moddev/clientRunProgramArgs.txt"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @/Users/ericx/uncraftable-strawberry-pickaxe-1/java-mcreator/build/moddev/clientRunVmArgs.txt -Dfml.modFolders=mcreator%%/Users/ericx/uncraftable-strawberry-pickaxe-1/java-mcreator/bin/main"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/Users/ericx/uncraftable-strawberry-pickaxe-1/java-mcreator/run"></stringAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"></booleanAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"></booleanAttribute>
 </launchConfiguration>

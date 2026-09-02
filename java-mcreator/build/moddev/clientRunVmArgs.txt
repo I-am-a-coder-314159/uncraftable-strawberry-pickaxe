@@ -4,7 +4,8 @@
 java.base/java.lang.invoke=ALL-UNNAMED
 --add-exports
 jdk.naming.dns/com.sun.jndi.dns=java.naming
--Dlog4j2.configurationFile=C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\build\\moddev\\clientLog4j2.xml
+-XstartOnFirstThread
+-Dlog4j2.configurationFile=/Users/ericx/uncraftable-strawberry-pickaxe-1/java-mcreator/build/moddev/clientLog4j2.xml
 -Djava.net.preferIPv6Addresses=system
 -Dneoforge.enableGameTest=true
 -Dforge.logging.markers=REGISTRIES

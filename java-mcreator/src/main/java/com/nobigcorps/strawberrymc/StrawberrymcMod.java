@@ -40,6 +40,7 @@ import com.nobigcorps.strawberrymc.network.StrawberrymcModVariables;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModTabs;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModMenus;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModItems;
+import com.nobigcorps.strawberrymc.init.StrawberrymcModEntities;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModBlocks;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModAttributes;
 
@@ -55,6 +56,7 @@ public class StrawberrymcMod {
 		modEventBus.addListener(this::registerNetworking);
 		StrawberrymcModBlocks.REGISTRY.register(modEventBus);
 		StrawberrymcModItems.REGISTRY.register(modEventBus);
+		StrawberrymcModEntities.REGISTRY.register(modEventBus);
 		StrawberrymcModTabs.REGISTRY.register(modEventBus);
 		StrawberrymcModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		StrawberrymcModMenus.REGISTRY.register(modEventBus);

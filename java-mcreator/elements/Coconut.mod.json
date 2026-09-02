@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": "CUSTOM:RawCoconut",
+    "showParticles": true,
+    "actionSound": "entity.snowball.throw",
+    "igniteFire": true,
+    "disableGravity": false,
+    "disableDiscarding": true,
+    "power": 0.6,
+    "damage": 6.0,
+    "knockback": 6,
+    "entityModel": "Default",
+    "customModelTexture": "coconut.png",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsBlock": "CoconutProjectileHitsBlock",
+    "onHitsPlayer": "CoconutProjectileHitsBlock",
+    "onHitsEntity": "CoconutProjectileHitsBlock"
+  }
+}

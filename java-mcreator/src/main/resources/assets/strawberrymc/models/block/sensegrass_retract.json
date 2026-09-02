@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "strawberrymc:block/sensegrass_retract",
+    "particle": "strawberrymc:block/sensegrass_retract"
+  }
+}
