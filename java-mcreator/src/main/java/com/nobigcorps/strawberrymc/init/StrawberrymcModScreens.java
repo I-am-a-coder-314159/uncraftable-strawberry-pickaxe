@@ -8,13 +8,13 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import com.nobigcorps.strawberrymc.client.gui.FletchingTableGUIScreen;
+import com.nobigcorps.strawberrymc.client.gui.GemcutterScreen;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class StrawberrymcModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
-		event.register(StrawberrymcModMenus.FLETCHING_TABLE_GUI.get(), FletchingTableGUIScreen::new);
+		event.register(StrawberrymcModMenus.GEMCUTTER.get(), GemcutterScreen::new);
 	}
 
 	public interface ScreenAccessor {

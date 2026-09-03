@@ -18,13 +18,13 @@ import net.minecraft.client.Minecraft;
 
 import java.util.Map;
 
-import com.nobigcorps.strawberrymc.world.inventory.FletchingTableGUIMenu;
+import com.nobigcorps.strawberrymc.world.inventory.GemcutterMenu;
 import com.nobigcorps.strawberrymc.network.MenuStateUpdateMessage;
 import com.nobigcorps.strawberrymc.StrawberrymcMod;
 
 public class StrawberrymcModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, StrawberrymcMod.MODID);
-	public static final DeferredHolder<MenuType<?>, MenuType<FletchingTableGUIMenu>> FLETCHING_TABLE_GUI = REGISTRY.register("fletching_table_gui", () -> IMenuTypeExtension.create(FletchingTableGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GemcutterMenu>> GEMCUTTER = REGISTRY.register("gemcutter", () -> IMenuTypeExtension.create(GemcutterMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

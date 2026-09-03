@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1.5,
+  "cookingtime": 400,
+  "ingredient": "strawberrymc:chorine_ore",
+  "result": {
+    "id": "strawberrymc:chorine"
+  }
+}

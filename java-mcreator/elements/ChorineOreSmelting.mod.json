@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:ChorineOre"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.5,
+    "cookingTime": 400,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": "CUSTOM:ChorineOre",
+    "blastingReturnStack": "CUSTOM:Chorine",
+    "name": "chorine_ore_smelting",
+    "namespace": "mod"
+  }
+}

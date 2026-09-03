@@ -1,0 +1,10 @@
+{
+  "desert_temple_boss": {
+    "sounds": [
+      {
+        "name": "strawberrymc:deserttemple",
+        "stream": false
+      }
+    ]
+  }
+}

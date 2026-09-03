@@ -26,6 +26,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_MID.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_RETRACT.get().asItem());
 			tabData.accept(StrawberrymcModItems.RAW_COCONUT.get());
+			tabData.accept(StrawberrymcModItems.CHORINE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.RADONITE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.RADONITE_BLOCK.get().asItem());
@@ -55,6 +56,8 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.PALM_TRAPDOOR.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_PRESSURE_PLATE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.PALM_BUTTON.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.CHORINE_ORE.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.CHORINE_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(StrawberrymcModItems.RADONITE_PICKAXE.get());
 			tabData.accept(StrawberrymcModItems.RADONITE_AXE.get());

@@ -1692,6 +1692,200 @@
           "src/main/java/com/nobigcorps/strawberrymc/procedures/SensegrassTickProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Chorine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/ChorineItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/chorine.json",
+          "src/main/resources/assets/strawberrymc/items/chorine.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/chorine_ore_biome_modifier.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/ChorineOreBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/blockstates/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/models/block/chorine_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/chorine_block.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/ChorineBlockBlock.java",
+          "src/main/resources/assets/strawberrymc/items/chorine_block.json",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_block.json",
+          "src/main/resources/assets/strawberrymc/models/block/chorine_block.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_block.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorine_ore_block_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorine_block_ore_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_ore_smelting.json",
+          "src/main/resources/data/strawberrymc/recipe/chorine_ore_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "RawDiamond",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_diamond",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/RawDiamondItem.java",
+          "src/main/resources/assets/strawberrymc/items/raw_diamond.json",
+          "src/main/resources/assets/strawberrymc/models/item/raw_diamond.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutOil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/CoconutOilItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/coconut_oil.json",
+          "src/main/resources/assets/strawberrymc/items/coconut_oil.json"
+        ]
+      }
+    },
+    {
+      "name": "GreenBeryl",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_beryl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/green_beryl.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/GreenBerylItem.java",
+          "src/main/resources/assets/strawberrymc/items/green_beryl.json"
+        ]
+      }
+    },
+    {
+      "name": "CalcGemcutterOutput",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calc_gemcutter_output",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/CalcGemcutterOutputProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Gemcutter",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gemcutter",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/client/gui/GemcutterScreen.java",
+          "src/main/java/com/nobigcorps/strawberrymc/network/GemcutterSlotMessage.java",
+          "src/main/java/com/nobigcorps/strawberrymc/world/inventory/GemcutterMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "DesertTemplwBossMusicSub",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_templw_boss_music_sub",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/DesertTemplwBossMusicSubProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1708,7 +1902,16 @@
       "value": "0"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "desert_temple_boss",
+      "files": [
+        "deserttemple"
+      ],
+      "category": "master",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {
     "ITEMS:strawberrymc:radonite_pickaxe_repair_items": [
       "~RadonitePickaxe@CUSTOM:RadoniteIngot"
@@ -1762,6 +1965,8 @@
       "CUSTOM:RadoniteArmor.boots"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~ChorineOre@CUSTOM:ChorineOre",
+      "~ChorineBlock@CUSTOM:ChorineBlock",
       "~RadoniteBlock@CUSTOM:RadoniteBlock",
       "~RadoniteOre@CUSTOM:RadoniteOre"
     ],
@@ -2263,7 +2468,17 @@
       "CUSTOM:PalmWood",
       "CUSTOM:StrippedPalmLog",
       "CUSTOM:StrippedPalmWood"
-    ]
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~ChorineOre@CUSTOM:ChorineOre",
+      "~ChorineBlock@CUSTOM:ChorineBlock"
+    ],
+    "ITEMS:strawberrymc:chorine_pickaxe_repair_items": [],
+    "ITEMS:strawberrymc:chorine_axe_repair_items": [],
+    "ITEMS:strawberrymc:chorine_sword_repair_items": [],
+    "ITEMS:strawberrymc:chorine_shovel_repair_items": [],
+    "ITEMS:strawberrymc:chorine_hoe_repair_items": [],
+    "ITEMS:strawberrymc:chorine_armor_repair_items": []
   },
   "tab_element_order": {},
   "language_map": {
@@ -2335,13 +2550,24 @@
       "death.attack.coconut_impact.player": "%1$s got hit by a \u003citem\u003e whilst trying to escape %2$s",
       "death.attack.coconut_impact": "%1$s died",
       "item.strawberrymc.coconut_sprout": "Coconut Sprout",
-      "item.strawberrymc.raw_coconut": "Raw Coconut"
+      "item.strawberrymc.raw_coconut": "Raw Coconut",
+      "item.strawberrymc.chorine": "Chorine",
+      "item.strawberrymc.chorine_ore": "Chorite",
+      "item.strawberrymc.chorine_block": "Block of Chorine",
+      "item.strawberrymc.raw_diamond": "Raw Diamond",
+      "item.strawberrymc.coconut_oil": "Coconut Oil",
+      "item.strawberrymc.green_beryl": "Green Beryl",
+      "gui.strawberrymc.gemcutter.label_gemcutter": "Gemcutter",
+      "subtitles.desert_temple_boss": ""
     }
   },
   "metadata": {
     "files": [
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModAttributes.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModWoodTypes.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModMenus.java",
+      "src/main/java/com/nobigcorps/strawberrymc/network/MenuStateUpdateMessage.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModScreens.java",
       "src/main/resources/data/neoforge/data_maps/item/compostables.json",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModParticles.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModParticleTypes.java",
@@ -2352,6 +2578,8 @@
       "src/main/java/com/nobigcorps/strawberrymc/network/StrawberrymcModVariables.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModTabs.java",
       "src/main/java/com/nobigcorps/strawberrymc/StrawberrymcMod.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModSounds.java",
+      "src/main/resources/assets/strawberrymc/sounds.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModModels.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModDispenseBehaviors.java",
