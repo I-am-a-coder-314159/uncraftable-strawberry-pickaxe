@@ -5,6 +5,13 @@ java.base/java.lang.invoke=ALL-UNNAMED
 --add-exports
 jdk.naming.dns/com.sun.jndi.dns=java.naming
 -XstartOnFirstThread
+
+# User JVM Arguments
+-Dcom.sun.management.jmxremote.port=1099
+-Dcom.sun.management.jmxremote.local.only=true
+-Dcom.sun.management.jmxremote.ssl=false
+-Dcom.sun.management.jmxremote.authenticate=false
+
 -Dlog4j2.configurationFile=/Users/ericx/uncraftable-strawberry-pickaxe-1/java-mcreator/build/moddev/clientLog4j2.xml
 -Djava.net.preferIPv6Addresses=system
 -Dneoforge.enableGameTest=true

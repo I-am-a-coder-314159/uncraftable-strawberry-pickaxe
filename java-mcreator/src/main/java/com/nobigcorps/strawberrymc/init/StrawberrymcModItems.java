@@ -70,9 +70,6 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> PALM_HANGING_SIGN;
 	public static final DeferredItem<Item> PALM_BOAT;
 	public static final DeferredItem<Item> PALM_CHEST_BOAT;
-	public static final DeferredItem<Item> CHORINE;
-	public static final DeferredItem<Item> CHORINE_ORE;
-	public static final DeferredItem<Item> CHORINE_BLOCK;
 	public static final DeferredItem<Item> RAW_DIAMOND;
 	public static final DeferredItem<Item> COCONUT_OIL;
 	public static final DeferredItem<Item> GREEN_BERYL;
@@ -130,9 +127,6 @@ public class StrawberrymcModItems {
 		PALM_HANGING_SIGN = hangingSignBlock(StrawberrymcModBlocks.PALM_HANGING_SIGN, StrawberrymcModBlocks.PALM_WALL_HANGING_SIGN, new Item.Properties().stacksTo(16));
 		PALM_BOAT = register("palm_boat", properties -> new BoatItem(StrawberrymcModEntities.PALM_BOAT.get(), properties.stacksTo(1)));
 		PALM_CHEST_BOAT = register("palm_chest_boat", properties -> new BoatItem(StrawberrymcModEntities.PALM_CHEST_BOAT.get(), properties.stacksTo(1)));
-		CHORINE = register("chorine", ChorineItem::new);
-		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE, new Item.Properties().rarity(Rarity.RARE));
-		CHORINE_BLOCK = block(StrawberrymcModBlocks.CHORINE_BLOCK);
 		RAW_DIAMOND = register("raw_diamond", RawDiamondItem::new);
 		COCONUT_OIL = register("coconut_oil", CoconutOilItem::new);
 		GREEN_BERYL = register("green_beryl", GreenBerylItem::new);

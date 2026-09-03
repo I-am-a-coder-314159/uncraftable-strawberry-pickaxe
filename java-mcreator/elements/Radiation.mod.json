@@ -6,7 +6,7 @@
     "scaling": "always",
     "effects": "poking",
     "normalDeathMessage": "%1$s died of radiation",
-    "itemDeathMessage": "%1$s was killed by %2$s using an irradiated %3$s",
+    "itemDeathMessage": "%1$s was killed by %2$s using an irradiated %3$s (§kTheEnd§r)",
     "playerDeathMessage": "%1$s died whilst trying to escape the radiation of %2$s"
   }
 }
