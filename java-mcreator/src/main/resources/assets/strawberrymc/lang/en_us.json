@@ -71,5 +71,8 @@
   "item.strawberrymc.coconut_oil": "Coconut Oil",
   "item.strawberrymc.green_beryl": "Green Beryl",
   "gui.strawberrymc.gemcutter.label_gemcutter": "Gemcutter",
-  "subtitles.desert_temple_boss": ""
+  "subtitles.desert_temple_boss": "",
+  "item.strawberrymc.chorine": "Chorine",
+  "item.strawberrymc.chorine_ore": "Chorine Ore",
+  "item.strawberrymc.chorine_block": "Block of Chorine"
 }

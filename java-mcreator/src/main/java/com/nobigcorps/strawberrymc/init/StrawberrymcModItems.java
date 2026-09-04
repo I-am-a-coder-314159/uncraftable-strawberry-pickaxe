@@ -73,6 +73,10 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> RAW_DIAMOND;
 	public static final DeferredItem<Item> COCONUT_OIL;
 	public static final DeferredItem<Item> GREEN_BERYL;
+	public static final DeferredItem<Item> CHORINE;
+	public static final DeferredItem<Item> CHORINE_ORE;
+	public static final DeferredItem<Item> CHORINE_BLOCK;
+	public static final DeferredItem<Item> CHORINE_UPGRADE_TEMPLATE;
 	static {
 		RADONITE_INGOT = register("radonite_ingot", RadoniteIngotItem::new);
 		RADONITE_ORE = block(StrawberrymcModBlocks.RADONITE_ORE);
@@ -130,6 +134,10 @@ public class StrawberrymcModItems {
 		RAW_DIAMOND = register("raw_diamond", RawDiamondItem::new);
 		COCONUT_OIL = register("coconut_oil", CoconutOilItem::new);
 		GREEN_BERYL = register("green_beryl", GreenBerylItem::new);
+		CHORINE = register("chorine", ChorineItem::new);
+		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
+		CHORINE_BLOCK = block(StrawberrymcModBlocks.CHORINE_BLOCK);
+		CHORINE_UPGRADE_TEMPLATE = register("chorine_upgrade_template", ChorineUpgradeTemplateItem::new);
 	}
 
 	// Start of user code block custom items

@@ -8,6 +8,7 @@ import net.minecraft.world.entity.Entity;
 
 import com.nobigcorps.strawberrymc.init.StrawberrymcModMenus;
 import com.nobigcorps.strawberrymc.init.StrawberrymcModItems;
+import com.nobigcorps.strawberrymc.init.StrawberrymcModBlocks;
 
 public class CalcGemcutterOutputProcedure {
 	public static void execute(Entity entity) {
@@ -57,6 +58,19 @@ public class CalcGemcutterOutputProcedure {
 								_setstack17.setCount(1);
 								_menu.getSlots().get(0).set(_setstack17);
 								_player.containerMenu.broadcastChanges();
+							}
+						} else {
+							if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu18 ? _menu18.getSlots().get(0).getItem() : ItemStack.EMPTY)
+									.getItem() == StrawberrymcModBlocks.CHORINE_BLOCK.get().asItem()) {
+								if (entity instanceof Player _player && _player.containerMenu instanceof StrawberrymcModMenus.MenuAccessor _menu) {
+									ItemStack _setstack20 = new ItemStack(StrawberrymcModItems.CHORINE.get()).copy();
+									_setstack20.setCount(1);
+									_menu.getSlots().get(1).set(_setstack20);
+									ItemStack _setstack21 = new ItemStack(Blocks.AIR).copy();
+									_setstack21.setCount(1);
+									_menu.getSlots().get(0).set(_setstack21);
+									_player.containerMenu.broadcastChanges();
+								}
 							}
 						}
 					}
