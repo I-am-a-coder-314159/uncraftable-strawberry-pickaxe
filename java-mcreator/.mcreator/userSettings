@@ -1,15 +1,11 @@
 {
-  "workspacePanelIconSize": "SMALL",
+  "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
   "projectBrowserState": {
     "expandedPaths": [
       "[, Strawberry Minecraft]",
-      "[, Strawberry Minecraft, Source (Gradle)]",
-      "[, Strawberry Minecraft, Source (Gradle), C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com]",
-      "[, Strawberry Minecraft, Source (Gradle), C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps]",
-      "[, Strawberry Minecraft, Source (Gradle), C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps\\strawberrymc]",
-      "[, Strawberry Minecraft, Source (Gradle), C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps\\strawberrymc, C:\\Users\\shash\\Documents\\Coding\\nonmints\\StrawberryMinecraft\\uncraftable-strawberry-pickaxe\\java-mcreator\\src\\main\\java\\com\\nobigcorps\\strawberrymc\\procedures]"
+      "[, Strawberry Minecraft, Source (Gradle)]"
     ]
   },
   "leftDockState": {
@@ -23,6 +19,7 @@
     "dockSizes": {}
   },
   "bottomDockState": {
+    "expandedDock": "console",
     "dockSizes": {
       "console": 336,
       "code_viewer": 300,
