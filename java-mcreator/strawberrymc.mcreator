@@ -1415,6 +1415,19 @@
           "src/main/java/com/nobigcorps/strawberrymc/procedures/ChorinePlayerDeathProcedureProcedure.java"
         ]
       }
+    },
+    {
+      "name": "AddArrowNBTProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_arrow_nbt_procedure",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/AddArrowNBTProcedureProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [

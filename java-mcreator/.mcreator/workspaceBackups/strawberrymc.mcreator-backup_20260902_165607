@@ -973,6 +973,448 @@
           "src/main/resources/data/strawberrymc/damage_type/coconut_impact.json"
         ]
       }
+    },
+    {
+      "name": "CoconutGrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_grow",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/CoconutGrowProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutSproutTrample",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_sprout_trample",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/CoconutSproutTrampleProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CoconutSprout",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_sprout",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/coconut_sprout.json",
+          "src/main/resources/assets/strawberrymc/models/item/coconut_sprout.json",
+          "src/main/resources/assets/strawberrymc/models/block/coconut_sprout.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/CoconutSproutBlock.java",
+          "src/main/resources/assets/strawberrymc/items/coconut_sprout.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/coconut_sprout.json"
+        ]
+      }
+    },
+    {
+      "name": "CoconutPlant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/CoconutPlantProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RawCoconut",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_coconut",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/RawCoconutItem.java",
+          "src/main/resources/assets/strawberrymc/items/raw_coconut.json",
+          "src/main/resources/assets/strawberrymc/models/item/raw_coconut.json"
+        ]
+      }
+    },
+    {
+      "name": "Coconut",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coconut",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/entity/CoconutEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ChorineDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/chorine_dust.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/ChorineDustItem.java",
+          "src/main/resources/assets/strawberrymc/items/chorine_dust.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_ore.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_ore.json",
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/chorine_ore_biome_modifier.json",
+          "src/main/resources/assets/strawberrymc/models/block/chorine_ore.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/ChorineOreBlock.java",
+          "src/main/resources/assets/strawberrymc/blockstates/chorine_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/blockstates/chorine_block.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/chorine_block.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/ChorineBlockBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_block.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_block.json",
+          "src/main/resources/assets/strawberrymc/models/block/chorine_block.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_ore_block_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/chorine_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_block_ore_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/chorine_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_ore_smelting.json",
+          "src/main/resources/data/strawberrymc/recipe/chorine_ore_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorinePickaxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/chorine_pickaxe.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/ChorinePickaxeItem.java",
+          "src/main/resources/assets/strawberrymc/items/chorine_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/ChorineAxeItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_axe.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/chorine_sword.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_sword.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/ChorineSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ChorineShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/ChorineShovelItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_shovel.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/chorine_hoe.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/ChorineHoeItem.java",
+          "src/main/resources/assets/strawberrymc/items/chorine_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorinePickaxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorine_pickaxe_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_pickaxe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_axe_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/chorine_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorine_sword_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorine_shovel_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorine_hoe_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_hoe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/ChorineArmorItem.java",
+          "src/main/resources/assets/strawberrymc/items/chorine_armor_helmet.json",
+          "src/main/resources/assets/strawberrymc/equipment/chorine_armor.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_armor_leggings.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_armor_boots.json",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_armor_chestplate.json",
+          "src/main/java/com/nobigcorps/strawberrymc/client/renderer/item/ChorineArmorArmor.java",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_armor_boots.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_armor_chestplate.json",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_armor_helmet.json",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_armor_leggings.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorine_armor_helmet_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_armor_helmet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorine_armor_chestplate_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_armor_chestplate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_armor_leggings_recipe.json",
+          "src/main/resources/data/strawberrymc/recipe/chorine_armor_leggings_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/recipe/chorine_armor_boots_recipe.json",
+          "src/main/resources/data/strawberrymc/advancement/recipes/chorine_armor_boots_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorineUpgradeTemplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_upgrade_template",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/item/ChorineUpgradeTemplateItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/chorine_upgrade_template.json",
+          "src/main/resources/assets/strawberrymc/items/chorine_upgrade_template.json"
+        ]
+      }
+    },
+    {
+      "name": "ChorinePlayerDeathProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chorine_player_death_procedure",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/ChorinePlayerDeathProcedureProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1043,6 +1485,8 @@
       "CUSTOM:RadoniteArmor.boots"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~ChorineBlock@CUSTOM:ChorineBlock",
+      "~ChorineOre@CUSTOM:ChorineOre",
       "~RadoniteBlock@CUSTOM:RadoniteBlock",
       "~RadoniteOre@CUSTOM:RadoniteOre"
     ],
@@ -1051,30 +1495,39 @@
       "~RadoniteOre@CUSTOM:RadoniteOre"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~ChorinePickaxe@CUSTOM:ChorinePickaxe",
       "~RadonitePickaxe@CUSTOM:RadonitePickaxe"
     ],
     "ITEMS:minecraft:axes": [
+      "~ChorineAxe@CUSTOM:ChorineAxe",
       "~RadoniteAxe@CUSTOM:RadoniteAxe"
     ],
     "ITEMS:minecraft:swords": [
+      "~ChorineSword@CUSTOM:ChorineSword",
       "~RadoniteSword@CUSTOM:RadoniteSword"
     ],
     "ITEMS:minecraft:shovels": [
+      "~ChorineShovel@CUSTOM:ChorineShovel",
       "~RadoniteShovel@CUSTOM:RadoniteShovel"
     ],
     "ITEMS:minecraft:hoes": [
+      "~ChorineHoe@CUSTOM:ChorineHoe",
       "~RadoniteHoe@CUSTOM:RadoniteHoe"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~ChorineArmor@CUSTOM:ChorineArmor.helmet",
       "~RadoniteArmor@CUSTOM:RadoniteArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~ChorineArmor@CUSTOM:ChorineArmor.body",
       "~RadoniteArmor@CUSTOM:RadoniteArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~ChorineArmor@CUSTOM:ChorineArmor.legs",
       "~RadoniteArmor@CUSTOM:RadoniteArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~ChorineArmor@CUSTOM:ChorineArmor.boots",
       "~RadoniteArmor@CUSTOM:RadoniteArmor.boots"
     ],
     "BLOCKS:strawberrymc:radiation_shielding_99": [
@@ -1491,6 +1944,31 @@
     ],
     "ITEMS:minecraft:chest_boats": [
       "~EchowoodChestBoat@CUSTOM:EchowoodChestBoat"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CoconutSprout@CUSTOM:CoconutSprout"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~ChorineBlock@CUSTOM:ChorineBlock",
+      "~ChorineOre@CUSTOM:ChorineOre"
+    ],
+    "ITEMS:strawberrymc:chorine_pickaxe_repair_items": [
+      "~ChorinePickaxe@CUSTOM:ChorineDust"
+    ],
+    "ITEMS:strawberrymc:chorine_axe_repair_items": [
+      "~ChorineAxe@CUSTOM:ChorineDust"
+    ],
+    "ITEMS:strawberrymc:chorine_sword_repair_items": [
+      "~ChorineSword@CUSTOM:ChorineDust"
+    ],
+    "ITEMS:strawberrymc:chorine_shovel_repair_items": [
+      "~ChorineShovel@CUSTOM:ChorineDust"
+    ],
+    "ITEMS:strawberrymc:chorine_hoe_repair_items": [
+      "~ChorineHoe@CUSTOM:ChorineDust"
+    ],
+    "ITEMS:strawberrymc:chorine_armor_repair_items": [
+      "~ChorineArmor@CUSTOM:ChorineDust"
     ]
   },
   "tab_element_order": {},
@@ -1561,7 +2039,22 @@
       "item.strawberrymc.sensegrass_retract": "Sensegrass Ext",
       "death.attack.coconut_impact.item": "%1$s got hit by a %3$s too hard",
       "death.attack.coconut_impact.player": "%1$s got hit by a \u003citem\u003e whilst trying to escape %2$s",
-      "death.attack.coconut_impact": "%1$s died"
+      "death.attack.coconut_impact": "%1$s died",
+      "item.strawberrymc.coconut_sprout": "Coconut Sprout",
+      "item.strawberrymc.raw_coconut": "Raw Coconut",
+      "item.strawberrymc.chorine_dust": "Chorine",
+      "item.strawberrymc.chorine_ore": "Chorine Ore",
+      "item.strawberrymc.chorine_block": "Block of Chorine",
+      "item.strawberrymc.chorine_pickaxe": "Chorine Pickaxe",
+      "item.strawberrymc.chorine_axe": "Chorine Axe",
+      "item.strawberrymc.chorine_sword": "Chorine Sword",
+      "item.strawberrymc.chorine_shovel": "Chorine Shovel",
+      "item.strawberrymc.chorine_hoe": "Chorine Hoe",
+      "item.strawberrymc.chorine_armor_chestplate": "Chorine Chestplate",
+      "item.strawberrymc.chorine_armor_leggings": "Chorine Leggings",
+      "item.strawberrymc.chorine_armor_boots": "Chorine Boots",
+      "item.strawberrymc.chorine_armor_helmet": "Chorine Helmet",
+      "item.strawberrymc.chorine_upgrade_template": "Chorine Upgrade Template"
     }
   },
   "metadata": {
@@ -1574,13 +2067,13 @@
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModEntities.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModEntityRenderers.java",
       "src/main/java/com/nobigcorps/strawberrymc/network/StrawberrymcModVariables.java",
-      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModTabs.java",
       "src/main/java/com/nobigcorps/strawberrymc/StrawberrymcMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModModels.java",
-      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModDispenseBehaviors.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModTabs.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModDispenseBehaviors.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModModels.java"
     ]
   },
   "foldersRoot": {
