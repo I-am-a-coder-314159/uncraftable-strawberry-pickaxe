@@ -77,6 +77,8 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> CHORITE_ORE;
 	public static final DeferredItem<Item> CHORINE_BLOCK;
 	public static final DeferredItem<Item> CHORINE_UPGRADE_TEMPLATE;
+	public static final DeferredItem<Item> ENDILLARY;
+	public static final DeferredItem<Item> ENDILLARY_WITH_NECTAR;
 	static {
 		RADONITE_INGOT = register("radonite_ingot", RadoniteIngotItem::new);
 		RADONITE_ORE = block(StrawberrymcModBlocks.RADONITE_ORE);
@@ -138,6 +140,8 @@ public class StrawberrymcModItems {
 		CHORITE_ORE = block(StrawberrymcModBlocks.CHORITE_ORE);
 		CHORINE_BLOCK = block(StrawberrymcModBlocks.CHORINE_BLOCK);
 		CHORINE_UPGRADE_TEMPLATE = register("chorine_upgrade_template", ChorineUpgradeTemplateItem::new);
+		ENDILLARY = block(StrawberrymcModBlocks.ENDILLARY, new Item.Properties().rarity(Rarity.UNCOMMON));
+		ENDILLARY_WITH_NECTAR = block(StrawberrymcModBlocks.ENDILLARY_WITH_NECTAR, new Item.Properties().rarity(Rarity.UNCOMMON));
 	}
 
 	// Start of user code block custom items

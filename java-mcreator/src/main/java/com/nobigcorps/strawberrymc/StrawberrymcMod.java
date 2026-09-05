@@ -55,6 +55,7 @@ public class StrawberrymcMod {
 		StrawberrymcModEntities.REGISTRY.register(modEventBus);
 		StrawberrymcModTabs.REGISTRY.register(modEventBus);
 		StrawberrymcModVariables.ATTACHMENT_TYPES.register(modEventBus);
+		StrawberrymcModPotions.REGISTRY.register(modEventBus);
 		StrawberrymcModMobEffects.REGISTRY.register(modEventBus);
 		StrawberrymcModMenus.REGISTRY.register(modEventBus);
 		StrawberrymcModParticleTypes.REGISTRY.register(modEventBus);

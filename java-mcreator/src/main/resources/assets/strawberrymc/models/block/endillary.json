@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "strawberrymc:block/placeholder2",
+    "particle": "strawberrymc:block/placeholder2"
+  }
+}

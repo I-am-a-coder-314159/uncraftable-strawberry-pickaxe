@@ -1,0 +1,20 @@
+{
+  "_fv": 89,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Endillary Nectar",
+    "splashName": "Splashable Endillary Nectar",
+    "lingeringName": "Lingering Splashable Endillary Nectar",
+    "arrowName": "Endillary Nectar Coated Arrow",
+    "effects": [
+      {
+        "effect": "CUSTOM:Curing",
+        "duration": 3600,
+        "infinite": false,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

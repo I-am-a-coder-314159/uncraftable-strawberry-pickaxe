@@ -28,6 +28,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.RAW_COCONUT.get());
 			tabData.accept(StrawberrymcModItems.CHORINE.get());
 			tabData.accept(StrawberrymcModItems.CHORINE_UPGRADE_TEMPLATE.get());
+			tabData.accept(StrawberrymcModBlocks.ENDILLARY.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.RADONITE_ORE.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.RADONITE_BLOCK.get().asItem());
@@ -83,6 +84,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModBlocks.COCONUT_SPROUT.get().asItem());
 			tabData.accept(StrawberrymcModItems.RAW_COCONUT.get());
 			tabData.accept(StrawberrymcModBlocks.PALM_LEAVES.get().asItem());
+			tabData.accept(StrawberrymcModBlocks.ENDILLARY.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_SIGN.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_HANGING_SIGN.get().asItem());

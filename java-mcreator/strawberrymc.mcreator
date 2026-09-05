@@ -1940,6 +1940,150 @@
           "src/main/java/com/nobigcorps/strawberrymc/potion/UncraftableMobEffect.java"
         ]
       }
+    },
+    {
+      "name": "UncraftingPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uncrafting_potion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Curing",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nectar_invulnerability",
+      "metadata": {
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/potion/CuringMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Endillary",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endillary",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/models/item/endillary.json",
+          "src/main/resources/assets/strawberrymc/blockstates/endillary.json",
+          "src/main/resources/data/strawberrymc/loot_table/blocks/endillary.json",
+          "src/main/resources/assets/strawberrymc/models/block/endillary.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EndillaryBlock.java",
+          "src/main/resources/assets/strawberrymc/items/endillary.json"
+        ]
+      }
+    },
+    {
+      "name": "EndillaryWithNectar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endillary_with_nectar",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/loot_table/blocks/endillary_with_nectar.json",
+          "src/main/resources/assets/strawberrymc/blockstates/endillary_with_nectar.json",
+          "src/main/java/com/nobigcorps/strawberrymc/block/EndillaryWithNectarBlock.java",
+          "src/main/resources/assets/strawberrymc/models/item/endillary_with_nectar.json",
+          "src/main/resources/assets/strawberrymc/items/endillary_with_nectar.json",
+          "src/main/resources/assets/strawberrymc/models/block/endillary_with_nectar.json"
+        ]
+      }
+    },
+    {
+      "name": "EndillaryNectar",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endillary_nectar",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "EndillaryNectarGet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endillary_nectar_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/EndillaryNectarGetProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EndillaryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endillary_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/EndillaryTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EndillaryPatch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endillary_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/strawberrymc/neoforge/biome_modifier/endillary_patch_biome_modifier.json",
+          "src/main/resources/data/strawberrymc/worldgen/configured_feature/endillary_patch.json",
+          "src/main/resources/data/strawberrymc/worldgen/placed_feature/endillary_patch.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2382,15 +2526,18 @@
     "ITEMS:strawberrymc:chorine_shovel_repair_items": [],
     "ITEMS:strawberrymc:chorine_hoe_repair_items": [],
     "ITEMS:strawberrymc:chorine_armor_repair_items": [],
+    "BLOCKS:mod:endstone_replace": [
+      "Blocks.END_STONE"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~ChorineOre@CUSTOM:ChorineOre",
       "~ChorineBlock@CUSTOM:ChorineBlock",
+      "~ChorineOre@CUSTOM:ChorineOre",
       "~RadoniteBlock@CUSTOM:RadoniteBlock",
       "~RadoniteOre@CUSTOM:RadoniteOre"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
-      "~ChorineOre@CUSTOM:ChorineOre",
       "~ChorineBlock@CUSTOM:ChorineBlock",
+      "~ChorineOre@CUSTOM:ChorineOre",
       "~RadoniteBlock@CUSTOM:RadoniteBlock",
       "~RadoniteOre@CUSTOM:RadoniteOre"
     ],
@@ -2530,9 +2677,6 @@
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~CoconutSprout@CUSTOM:CoconutSprout"
-    ],
-    "BLOCKS:mod:endstone_replace": [
-      "Blocks.END_STONE"
     ]
   },
   "tab_element_order": {},
@@ -2616,7 +2760,18 @@
       "item.strawberrymc.chorine_upgrade_template": "Chorine Upgrade Template",
       "item.strawberrymc.chorite_ore": "Chorine Ore",
       "biome.strawberrymc.end_highlands": "End Mesa",
-      "effect.strawberrymc.uncraftable": "Uncraftable"
+      "effect.strawberrymc.uncraftable": "Uncraftable",
+      "item.minecraft.lingering_potion.effect.uncrafting_potion": "Lingering Potion of Uncrafting",
+      "item.minecraft.potion.effect.uncrafting_potion": "Potion of Uncrafting",
+      "item.minecraft.tipped_arrow.effect.uncrafting_potion": "Arrow of Uncrafting",
+      "item.minecraft.splash_potion.effect.uncrafting_potion": "Splash Potion of Uncrafting",
+      "item.strawberrymc.endillary": "Endillary",
+      "item.strawberrymc.endillary_with_nectar": "Endillary With Nectar",
+      "item.minecraft.splash_potion.effect.endillary_nectar": "Splashable Endillary Nectar",
+      "item.minecraft.potion.effect.endillary_nectar": "Endillary Nectar",
+      "item.minecraft.lingering_potion.effect.endillary_nectar": "Lingering Splashable Endillary Nectar",
+      "item.minecraft.tipped_arrow.effect.endillary_nectar": "Endillary Nectar Coated Arrow",
+      "effect.strawberrymc.nectar_invulnerability": "Invulnerability"
     }
   },
   "metadata": {
@@ -2630,6 +2785,7 @@
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModParticles.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModParticleTypes.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModMobEffects.java",
+      "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModPotions.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModBlocks.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModItems.java",
       "src/main/java/com/nobigcorps/strawberrymc/init/StrawberrymcModEntities.java",

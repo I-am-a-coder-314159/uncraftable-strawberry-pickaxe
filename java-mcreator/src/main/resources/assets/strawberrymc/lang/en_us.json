@@ -76,5 +76,17 @@
   "item.strawberrymc.chorine_block": "Block of Chorine",
   "item.strawberrymc.chorine_upgrade_template": "Chorine Upgrade Template",
   "item.strawberrymc.chorite_ore": "Chorine Ore",
-  "biome.strawberrymc.end_highlands": "End Mesa"
+  "biome.strawberrymc.end_highlands": "End Mesa",
+  "effect.strawberrymc.uncraftable": "Uncraftable",
+  "item.minecraft.lingering_potion.effect.uncrafting_potion": "Lingering Potion of Uncrafting",
+  "item.minecraft.potion.effect.uncrafting_potion": "Potion of Uncrafting",
+  "item.minecraft.tipped_arrow.effect.uncrafting_potion": "Arrow of Uncrafting",
+  "item.minecraft.splash_potion.effect.uncrafting_potion": "Splash Potion of Uncrafting",
+  "item.strawberrymc.endillary": "Endillary",
+  "item.strawberrymc.endillary_with_nectar": "Endillary With Nectar",
+  "item.minecraft.splash_potion.effect.endillary_nectar": "Splashable Endillary Nectar",
+  "item.minecraft.potion.effect.endillary_nectar": "Endillary Nectar",
+  "item.minecraft.lingering_potion.effect.endillary_nectar": "Lingering Splashable Endillary Nectar",
+  "item.minecraft.tipped_arrow.effect.endillary_nectar": "Endillary Nectar Coated Arrow",
+  "effect.strawberrymc.nectar_invulnerability": "Invulnerability"
 }

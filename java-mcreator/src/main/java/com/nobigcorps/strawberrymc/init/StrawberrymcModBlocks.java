@@ -69,6 +69,8 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> PALM_WALL_HANGING_SIGN;
 	public static final DeferredBlock<Block> CHORITE_ORE;
 	public static final DeferredBlock<Block> CHORINE_BLOCK;
+	public static final DeferredBlock<Block> ENDILLARY;
+	public static final DeferredBlock<Block> ENDILLARY_WITH_NECTAR;
 	static {
 		RADONITE_ORE = register("radonite_ore", RadoniteOreBlock::new);
 		RADONITE_BLOCK = register("radonite_block", RadoniteBlockBlock::new);
@@ -114,6 +116,8 @@ public class StrawberrymcModBlocks {
 		PALM_WALL_HANGING_SIGN = register("palm_wall_hanging_sign", PalmWallHangingSignBlock::new);
 		CHORITE_ORE = register("chorite_ore", ChorineOreBlock::new);
 		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
+		ENDILLARY = register("endillary", EndillaryBlock::new);
+		ENDILLARY_WITH_NECTAR = register("endillary_with_nectar", EndillaryWithNectarBlock::new);
 	}
 
 	// Start of user code block custom blocks
