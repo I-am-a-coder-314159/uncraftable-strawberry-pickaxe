@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=y": { "model": "strawberrymc:block/echowood" },
+    "axis=z": { "model": "strawberrymc:block/echowood_horizontal", "x": 90 },
+    "axis=x": { "model": "strawberrymc:block/echowood_horizontal", "x": 90, "y": 90 }
+  },
+  "acoustics": {
+    "vol":{}
+  }
+}
