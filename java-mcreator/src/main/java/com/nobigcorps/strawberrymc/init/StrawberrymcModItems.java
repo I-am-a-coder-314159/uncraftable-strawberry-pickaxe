@@ -74,7 +74,7 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> COCONUT_OIL;
 	public static final DeferredItem<Item> GREEN_BERYL;
 	public static final DeferredItem<Item> CHORINE;
-	public static final DeferredItem<Item> CHORINE_ORE;
+	public static final DeferredItem<Item> CHORITE_ORE;
 	public static final DeferredItem<Item> CHORINE_BLOCK;
 	public static final DeferredItem<Item> CHORINE_UPGRADE_TEMPLATE;
 	static {
@@ -135,7 +135,7 @@ public class StrawberrymcModItems {
 		COCONUT_OIL = register("coconut_oil", CoconutOilItem::new);
 		GREEN_BERYL = register("green_beryl", GreenBerylItem::new);
 		CHORINE = register("chorine", ChorineItem::new);
-		CHORINE_ORE = block(StrawberrymcModBlocks.CHORINE_ORE);
+		CHORITE_ORE = block(StrawberrymcModBlocks.CHORITE_ORE);
 		CHORINE_BLOCK = block(StrawberrymcModBlocks.CHORINE_BLOCK);
 		CHORINE_UPGRADE_TEMPLATE = register("chorine_upgrade_template", ChorineUpgradeTemplateItem::new);
 	}

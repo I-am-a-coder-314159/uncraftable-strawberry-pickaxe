@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "strawberrymc:end_highlands",
+  "features": "strawberrymc:chorite_ore_vein",
+  "step": "underground_ores"
+}

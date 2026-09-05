@@ -73,6 +73,8 @@
   "gui.strawberrymc.gemcutter.label_gemcutter": "Gemcutter",
   "subtitles.desert_temple_boss": "",
   "item.strawberrymc.chorine": "Chorine",
-  "item.strawberrymc.chorine_ore": "Chorine Ore",
-  "item.strawberrymc.chorine_block": "Block of Chorine"
+  "item.strawberrymc.chorine_block": "Block of Chorine",
+  "item.strawberrymc.chorine_upgrade_template": "Chorine Upgrade Template",
+  "item.strawberrymc.chorite_ore": "Chorine Ore",
+  "biome.strawberrymc.end_highlands": "End Mesa"
 }

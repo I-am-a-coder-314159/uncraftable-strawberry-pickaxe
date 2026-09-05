@@ -2,7 +2,7 @@
   "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "chorine_ore",
+    "texture": "chorite_ore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -87,7 +87,7 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "soundOnStep": "STONE",
+    "soundOnStep": "AMETHYST_BLOCK",
     "isCustomSoundType": false,
     "breakSound": "",
     "fallSound": "",

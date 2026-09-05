@@ -3,7 +3,7 @@
   "category": "misc",
   "experience": 4.38,
   "cookingtime": 500,
-  "ingredient": "strawberrymc:chorine_ore",
+  "ingredient": "strawberrymc:chorite_ore",
   "result": {
     "id": "strawberrymc:chorine"
   }

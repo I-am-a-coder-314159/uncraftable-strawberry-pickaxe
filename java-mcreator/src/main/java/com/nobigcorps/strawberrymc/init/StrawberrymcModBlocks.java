@@ -67,7 +67,7 @@ public class StrawberrymcModBlocks {
 	public static final DeferredBlock<Block> PALM_WALL_SIGN;
 	public static final DeferredBlock<Block> PALM_HANGING_SIGN;
 	public static final DeferredBlock<Block> PALM_WALL_HANGING_SIGN;
-	public static final DeferredBlock<Block> CHORINE_ORE;
+	public static final DeferredBlock<Block> CHORITE_ORE;
 	public static final DeferredBlock<Block> CHORINE_BLOCK;
 	static {
 		RADONITE_ORE = register("radonite_ore", RadoniteOreBlock::new);
@@ -112,7 +112,7 @@ public class StrawberrymcModBlocks {
 		PALM_WALL_SIGN = register("palm_wall_sign", PalmWallSignBlock::new);
 		PALM_HANGING_SIGN = register("palm_hanging_sign", PalmHangingSignBlock::new);
 		PALM_WALL_HANGING_SIGN = register("palm_wall_hanging_sign", PalmWallHangingSignBlock::new);
-		CHORINE_ORE = register("chorine_ore", ChorineOreBlock::new);
+		CHORITE_ORE = register("chorite_ore", ChorineOreBlock::new);
 		CHORINE_BLOCK = register("chorine_block", ChorineBlockBlock::new);
 	}
 
