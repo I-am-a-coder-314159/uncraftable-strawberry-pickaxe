@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:ChorineDust",
+      "Items.ENDER_PEARL"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "CUSTOM:ChorineDust",
+      "",
+      "CUSTOM:ChorineDust",
+      "Items.ENDER_PEARL",
+      "CUSTOM:ChorineDust",
+      "",
+      "CUSTOM:ChorineDust",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:RecoveryPearl",
+    "name": "recovery_pearl_crafting_recipe",
+    "namespace": "mod"
+  }
+}

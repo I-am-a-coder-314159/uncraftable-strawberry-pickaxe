@@ -65,6 +65,7 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> CHORINE_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> CHORINE_ARMOR_BOOTS;
 	public static final DeferredItem<Item> CHORINE_UPGRADE_TEMPLATE;
+	public static final DeferredItem<Item> RECOVERY_PEARL;
 	static {
 		RADONITE_INGOT = register("radonite_ingot", RadoniteIngotItem::new);
 		RADONITE_ORE = block(StrawberrymcModBlocks.RADONITE_ORE);
@@ -114,6 +115,7 @@ public class StrawberrymcModItems {
 		CHORINE_ARMOR_LEGGINGS = register("chorine_armor_leggings", ChorineArmorItem.Leggings::new);
 		CHORINE_ARMOR_BOOTS = register("chorine_armor_boots", ChorineArmorItem.Boots::new);
 		CHORINE_UPGRADE_TEMPLATE = register("chorine_upgrade_template", ChorineUpgradeTemplateItem::new);
+		RECOVERY_PEARL = register("recovery_pearl", RecoveryPearlItem::new);
 	}
 
 	// Start of user code block custom items

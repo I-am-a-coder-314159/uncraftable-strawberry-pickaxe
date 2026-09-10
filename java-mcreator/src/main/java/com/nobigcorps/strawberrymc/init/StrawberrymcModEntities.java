@@ -13,6 +13,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
+import com.nobigcorps.strawberrymc.entity.RecoveryPearlProjectileEntity;
 import com.nobigcorps.strawberrymc.entity.EchowoodChestBoatEntity;
 import com.nobigcorps.strawberrymc.entity.EchowoodBoatEntity;
 import com.nobigcorps.strawberrymc.entity.CoconutEntity;
@@ -26,6 +27,8 @@ public class StrawberrymcModEntities {
 			EntityType.Builder.<EchowoodChestBoatEntity>of(EchowoodChestBoatEntity::new, MobCategory.MISC).noLootTable().sized(1.375F, 0.5625F).eyeHeight(0.5625F).clientTrackingRange(10));
 	public static final DeferredHolder<EntityType<?>, EntityType<CoconutEntity>> COCONUT = register("coconut",
 			EntityType.Builder.<CoconutEntity>of(CoconutEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<RecoveryPearlProjectileEntity>> RECOVERY_PEARL_PROJECTILE = register("recovery_pearl_projectile",
+			EntityType.Builder.<RecoveryPearlProjectileEntity>of(RecoveryPearlProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

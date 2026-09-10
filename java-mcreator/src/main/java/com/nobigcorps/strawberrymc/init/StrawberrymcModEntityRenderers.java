@@ -18,5 +18,6 @@ public class StrawberrymcModEntityRenderers {
 		event.registerEntityRenderer(StrawberrymcModEntities.ECHOWOOD_BOAT.get(), context -> new BoatRenderer(context, StrawberrymcModModels.ECHOWOOD_BOAT_LAYER_LOCATION));
 		event.registerEntityRenderer(StrawberrymcModEntities.ECHOWOOD_CHEST_BOAT.get(), context -> new BoatRenderer(context, StrawberrymcModModels.ECHOWOOD_CHEST_BOAT_LAYER_LOCATION));
 		event.registerEntityRenderer(StrawberrymcModEntities.COCONUT.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(StrawberrymcModEntities.RECOVERY_PEARL_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

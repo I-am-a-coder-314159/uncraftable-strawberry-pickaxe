@@ -69,6 +69,7 @@ public class StrawberrymcModTabs {
 			tabData.accept(StrawberrymcModItems.CHORINE_ARMOR_CHESTPLATE.get());
 			tabData.accept(StrawberrymcModItems.CHORINE_ARMOR_LEGGINGS.get());
 			tabData.accept(StrawberrymcModItems.CHORINE_ARMOR_BOOTS.get());
+			tabData.accept(StrawberrymcModItems.RECOVERY_PEARL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(StrawberrymcModBlocks.ECHOWOOD_LEAVES.get().asItem());
 			tabData.accept(StrawberrymcModBlocks.SENSEGRASS_EXT.get().asItem());
