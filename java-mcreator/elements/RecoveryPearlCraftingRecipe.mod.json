@@ -6,23 +6,22 @@
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      "CUSTOM:ChorineDust",
       "Items.ENDER_PEARL"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       "",
-      "CUSTOM:ChorineDust",
       "",
-      "CUSTOM:ChorineDust",
+      "",
+      "",
       "Items.ENDER_PEARL",
-      "CUSTOM:ChorineDust",
       "",
-      "CUSTOM:ChorineDust",
+      "",
+      "",
       ""
     ],
     "recipeReturnStack": "CUSTOM:RecoveryPearl",

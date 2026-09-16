@@ -1,15 +1,9 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    " a ",
-    "aba",
-    " a "
+  "ingredients": [
+    "minecraft:ender_pearl"
   ],
-  "key": {
-    "a": "strawberrymc:chorine_dust",
-    "b": "minecraft:ender_pearl"
-  },
   "result": {
     "id": "strawberrymc:recovery_pearl",
     "count": 1

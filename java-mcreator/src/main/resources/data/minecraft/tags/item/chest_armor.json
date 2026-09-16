@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "strawberrymc:radonite_armor_chestplate",
-    "strawberrymc:chorine_armor_chestplate"
+    "strawberrymc:radonite_armor_chestplate"
   ]
 }

@@ -67,18 +67,7 @@
   "death.attack.coconut_impact": "%1$s died",
   "item.strawberrymc.coconut_sprout": "Coconut Sprout",
   "item.strawberrymc.raw_coconut": "Raw Coconut",
-  "item.strawberrymc.chorine_dust": "Chorine",
-  "item.strawberrymc.chorine_ore": "Chorine Ore",
-  "item.strawberrymc.chorine_block": "Block of Chorine",
-  "item.strawberrymc.chorine_pickaxe": "Chorine Pickaxe",
-  "item.strawberrymc.chorine_axe": "Chorine Axe",
-  "item.strawberrymc.chorine_sword": "Chorine Sword",
-  "item.strawberrymc.chorine_shovel": "Chorine Shovel",
-  "item.strawberrymc.chorine_hoe": "Chorine Hoe",
-  "item.strawberrymc.chorine_armor_chestplate": "Chorine Chestplate",
-  "item.strawberrymc.chorine_armor_leggings": "Chorine Leggings",
-  "item.strawberrymc.chorine_armor_boots": "Chorine Boots",
-  "item.strawberrymc.chorine_armor_helmet": "Chorine Helmet",
   "item.strawberrymc.chorine_upgrade_template": "Chorine Upgrade Template",
-  "item.strawberrymc.recovery_pearl": "Recovery Pearl"
+  "item.strawberrymc.recovery_pearl": "Recovery Pearl",
+  "item.strawberrymc.coconut_bowl": "Coconut Bowl"
 }
