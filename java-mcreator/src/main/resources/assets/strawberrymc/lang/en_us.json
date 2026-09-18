@@ -88,5 +88,6 @@
   "item.minecraft.potion.effect.endillary_nectar": "Endillary Nectar",
   "item.minecraft.lingering_potion.effect.endillary_nectar": "Lingering Splashable Endillary Nectar",
   "item.minecraft.tipped_arrow.effect.endillary_nectar": "Endillary Nectar Coated Arrow",
-  "effect.strawberrymc.nectar_invulnerability": "Invulnerability"
+  "effect.strawberrymc.nectar_invulnerability": "Invulnerability",
+  "item.strawberrymc.smite_vial": "Smite Vial"
 }

@@ -2084,6 +2084,54 @@
           "src/main/resources/data/strawberrymc/worldgen/placed_feature/endillary_patch.json"
         ]
       }
+    },
+    {
+      "name": "SmiteVial",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smite_vial",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/strawberrymc/items/smite_vial.json",
+          "src/main/java/com/nobigcorps/strawberrymc/item/SmiteVialItem.java",
+          "src/main/resources/assets/strawberrymc/models/item/smite_vial.json"
+        ]
+      }
+    },
+    {
+      "name": "ElectricParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_particle",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/nobigcorps/strawberrymc/procedures/ElectricParticleProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2107,6 +2155,22 @@
         "deserttemple"
       ],
       "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "void_ambience_1",
+      "files": [
+        "audiomass-output"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "void_ambience_2",
+      "files": [
+        "audiomass-output_1"
+      ],
+      "category": "neutral",
       "subtitle": ""
     }
   ],
@@ -2771,7 +2835,10 @@
       "item.minecraft.potion.effect.endillary_nectar": "Endillary Nectar",
       "item.minecraft.lingering_potion.effect.endillary_nectar": "Lingering Splashable Endillary Nectar",
       "item.minecraft.tipped_arrow.effect.endillary_nectar": "Endillary Nectar Coated Arrow",
-      "effect.strawberrymc.nectar_invulnerability": "Invulnerability"
+      "effect.strawberrymc.nectar_invulnerability": "Invulnerability",
+      "item.strawberrymc.smite_vial": "Smite Vial",
+      "subtitles.void_ambience_1": "",
+      "subtitles.void_ambience_2": ""
     }
   },
   "metadata": {
