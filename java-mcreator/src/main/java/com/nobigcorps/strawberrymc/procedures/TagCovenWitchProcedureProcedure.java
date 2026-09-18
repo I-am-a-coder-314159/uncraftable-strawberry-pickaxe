@@ -19,6 +19,6 @@ public class TagCovenWitchProcedureProcedure {
 	}
 
 	private static void execute(@Nullable Event event) {
-		if (entity instanceof net.minecraft.world.entity.monster.Witch.witch) {}
+		//if (entity instanceof net.minecraft.world.entity.monster.Witch.witch) {}
 	}
 }

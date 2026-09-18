@@ -55,6 +55,7 @@ public class StrawberrymcModItems {
 	public static final DeferredItem<Item> CHORINE_UPGRADE_TEMPLATE;
 	public static final DeferredItem<Item> RECOVERY_PEARL;
 	public static final DeferredItem<Item> COCONUT_BOWL;
+	public static final DeferredItem<Item> CHISELED_CAULDRON;
 	static {
 		RADONITE_INGOT = register("radonite_ingot", RadoniteIngotItem::new);
 		RADONITE_ORE = block(StrawberrymcModBlocks.RADONITE_ORE);
@@ -94,6 +95,7 @@ public class StrawberrymcModItems {
 		CHORINE_UPGRADE_TEMPLATE = register("chorine_upgrade_template", ChorineUpgradeTemplateItem::new);
 		RECOVERY_PEARL = register("recovery_pearl", RecoveryPearlItem::new);
 		COCONUT_BOWL = register("coconut_bowl", CoconutBowlItem::new);
+		CHISELED_CAULDRON = block(StrawberrymcModBlocks.CHISELED_CAULDRON, new Item.Properties().rarity(Rarity.UNCOMMON));
 	}
 
 	// Start of user code block custom items

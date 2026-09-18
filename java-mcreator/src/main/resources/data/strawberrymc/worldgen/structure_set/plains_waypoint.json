@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "strawberrymc:plains_waypoint",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 5,
+    "separation": 2,
+    "salt": 675304694
+  }
+}
