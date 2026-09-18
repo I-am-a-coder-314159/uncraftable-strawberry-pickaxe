@@ -48,3 +48,26 @@ public class Registration {
         ITEMS.register(modEventBus);
     }
 }
+public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks("strawberrymc");
+
+public static final DeferredBlock<Block> ECHOWOOD_LOG = BLOCKS.register("echowood_log", 
+    () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+        .mapColor(MapColor.CUAN)
+        .instrument(NoteBlockInstrument.BASS) //do noteblock thingy for echowood
+        .strength(2.0F)
+        .sound(SoundType.WOOD)), "echowood_planks", 
+    () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+        .mapColor(MapColor.CYAN)
+        .instrument(NoteBlockInstrument.BASS) //do noteblock thingy for echowood
+        .strength(2.0F)
+        .sound(SoundType.WOOD)), "echowood_wood", 
+    () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+        .mapColor(MapColor.CYAN)
+        .instrument(NoteBlockInstrument.BASS) //do noteblock thingy for echowood
+        .strength(2.0F)
+        .sound(SoundType.WOOD)), "echowood_door", 
+    () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
+        .mapColor(MapColor.CYAN)
+        .instrument(NoteBlockInstrument.BASS) //do noteblock thingy for echowood
+        .strength(2.0F)
+        .sound(SoundType.WOOD)));
