@@ -8,3 +8,5 @@ Recovery Pearl Texture:
 Asset: "Purple ender pearl" Minecraft Texture
 Source: NovaSkin
 Link: [Click](https://minecraft.novaskin.me/post/1124113455/purple-ender-pearl)
+
+**THIS IS AN OUTDATED VERSION OF STRAWBERRYMC**
